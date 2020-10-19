@@ -16,7 +16,7 @@ namespace ProjetoProcessamentoImagens
         {
             InitializeComponent();
             pbImagem.Image = Image.FromFile("");
-            //colocar local de arquivo
+            //colocar local de arquivo da img
         }
 
         private void btnUP_Click(object sender, EventArgs e)
