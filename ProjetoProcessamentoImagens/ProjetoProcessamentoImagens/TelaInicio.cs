@@ -24,7 +24,9 @@ namespace ProjetoProcessamentoImagens
 
         private void btnBuscarPropriedade_Click(object sender, EventArgs e)
         {
-
+            BuscarPropriedade buscarPropriedade = new BuscarPropriedade();
+            buscarPropriedade.Show();
+            this.Hide();
         }
 
         private void btnBuscarAgrotoxico_Click(object sender, EventArgs e)
@@ -64,7 +66,9 @@ namespace ProjetoProcessamentoImagens
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Show();
+            this.Hide();
         }
     }
 }
