@@ -22,6 +22,7 @@ namespace ProjetoProcessamentoImagens
         private Label label1;
         private Label label2;
         private TextBox txtUsuario;
+        private Button btnSair;
         private Button btnCadastrarPropriedade;
 
         public TelaInicial()
@@ -40,6 +41,7 @@ namespace ProjetoProcessamentoImagens
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBuscarPropriedade
@@ -130,9 +132,20 @@ namespace ProjetoProcessamentoImagens
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 8;
             // 
+            // btnSair
+            // 
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(404, 233);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(169, 33);
+            this.btnSair.TabIndex = 9;
+            this.btnSair.Text = "SAIR";
+            this.btnSair.UseVisualStyleBackColor = true;
+            // 
             // TelaInicial
             // 
-            this.ClientSize = new System.Drawing.Size(585, 232);
+            this.ClientSize = new System.Drawing.Size(585, 276);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

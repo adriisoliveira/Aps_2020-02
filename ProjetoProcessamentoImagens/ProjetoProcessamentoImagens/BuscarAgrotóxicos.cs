@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjetoProcessamentoImagens
 {
-    public partial class TelaLogin : Form
+    public partial class BuscarAgrotóxicos : Form
     {
-        public TelaLogin()
+        public BuscarAgrotóxicos()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -36,12 +36,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxTipoAcesso = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +79,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 62);
+            this.label3.Location = new System.Drawing.Point(141, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 11;
@@ -84,9 +87,9 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(68, 58);
+            this.txtNome.Location = new System.Drawing.Point(195, 58);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(472, 20);
+            this.txtNome.Size = new System.Drawing.Size(345, 20);
             this.txtNome.TabIndex = 12;
             // 
             // label4
@@ -116,13 +119,13 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Tipo de Acesso:";
             // 
-            // listBox1
+            // lbxTipoAcesso
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(418, 109);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 17);
-            this.listBox1.TabIndex = 16;
+            this.lbxTipoAcesso.FormattingEnabled = true;
+            this.lbxTipoAcesso.Location = new System.Drawing.Point(418, 109);
+            this.lbxTipoAcesso.Name = "lbxTipoAcesso";
+            this.lbxTipoAcesso.Size = new System.Drawing.Size(120, 17);
+            this.lbxTipoAcesso.TabIndex = 16;
             // 
             // textBox1
             // 
@@ -161,27 +164,57 @@
             this.button2.Text = "Cadastrar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnLimpar
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(217, 201);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 30);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Cadastrar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(206, 201);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(144, 30);
+            this.btnLimpar.TabIndex = 21;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(17, 201);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(144, 30);
+            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(14, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(24, 16);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "ID:";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(44, 58);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(91, 20);
+            this.txtId.TabIndex = 24;
             // 
             // CadastrarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 450);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(555, 258);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbxTipoAcesso);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label4);
@@ -207,11 +240,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxTipoAcesso;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtId;
     }
 }
