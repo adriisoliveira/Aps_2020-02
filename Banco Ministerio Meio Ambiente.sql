@@ -40,6 +40,8 @@ create table Propriedade (
 	Nome varchar (255),
 	Endereco varchar (255),
 	ID_Cidade INT NOT NULL,
+	Tamanho varchar(255),
+	Producao varchar (255),
 	ID_Proprietario INT NOT NULL,
 	FOREIGN KEY (ID_Cidade) references Cidade (ID_Cidade),
 	FOREIGN KEY (ID_Proprietario) references Proprietario (ID_Proprietario)
@@ -62,5 +64,4 @@ CREATE TABLE Agrotoxico_Propriedade(
     FOREIGN KEY (ID_Agrotoxico) REFERENCES agrotoxico(ID_Agrotoxico),
     FOREIGN KEY (ID_Propriedade) REFERENCES propriedade(ID_Propriedade)
 );
-
 
