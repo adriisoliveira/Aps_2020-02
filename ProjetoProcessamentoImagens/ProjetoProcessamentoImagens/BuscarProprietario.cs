@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjetoProcessamentoImagens
 {
-    public partial class CadastrarPropriedade : Form
+    public partial class BuscarProprietario : Form
     {
-        public CadastrarPropriedade()
+        public BuscarProprietario()
         {
             InitializeComponent();
-        }
-
-        private void CadastrarPropriedade_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
