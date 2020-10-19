@@ -15,7 +15,7 @@ namespace ProjetoProcessamentoImagens
         //metodo construtor
         public Conexao()
         {
-            con.ConnectionString = "";
+            con.ConnectionString = "Data Source=LAPTOP-19CP4RFH\\DRIH;Initial Catalog=Ministerio_MeioAmbiente;Integrated Security=True";
         }
 
         //Método de conexão
