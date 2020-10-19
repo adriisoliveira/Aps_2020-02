@@ -1,0 +1,17 @@
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\ProjetoProcessamentoImagens.exe.config
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\ProjetoProcessamentoImagens.exe
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\ProjetoProcessamentoImagens.pdb
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csprojAssemblyReference.cache
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.BuscarAgrotoxicos.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.BuscarProprietario.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarAgrotoxico.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarPropriedade.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarUsuarios.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastroProprietario.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.TelaInicio.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.TelaLogin.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.Properties.Resources.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csproj.GenerateResource.cache
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csproj.CoreCompileInputs.cache
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.exe
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.pdb

@@ -52,7 +52,7 @@
             this.txtTipoProducao = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -160,6 +160,7 @@
             this.btnBuscarProprietario.TabIndex = 33;
             this.btnBuscarProprietario.Text = "Buscar";
             this.btnBuscarProprietario.UseVisualStyleBackColor = true;
+            this.btnBuscarProprietario.Click += new System.EventHandler(this.btnBuscarProprietario_Click);
             // 
             // label6
             // 
@@ -257,6 +258,7 @@
             this.btnCancelar.TabIndex = 46;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnLimpar
             // 
@@ -267,16 +269,18 @@
             this.btnLimpar.TabIndex = 45;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // button2
+            // btnCadastrar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(424, 289);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 30);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "Cadastrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.Location = new System.Drawing.Point(424, 289);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(144, 30);
+            this.btnCadastrar.TabIndex = 44;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // CadastrarPropriedade
             // 
@@ -285,7 +289,7 @@
             this.ClientSize = new System.Drawing.Size(640, 343);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtTipoProducao);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtTamanho);
@@ -342,6 +346,6 @@
         private System.Windows.Forms.TextBox txtTipoProducao;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }

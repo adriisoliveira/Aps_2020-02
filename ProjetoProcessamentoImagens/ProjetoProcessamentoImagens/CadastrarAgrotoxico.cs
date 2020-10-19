@@ -16,5 +16,32 @@ namespace ProjetoProcessamentoImagens
         {
             InitializeComponent();
         }
+        private void CadastrarAgrotoxico_Load(object sender, EventArgs e)
+        {
+            txtNome.Focus();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            TelaInicio telaInicio = new TelaInicio();
+            telaInicio.Show();
+            this.Hide();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtId.Clear();
+            txtNome.Clear();
+            txtDescricao.Clear();
+            txtComposicao.Clear();
+            txtPermissao.Clear();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -24,7 +24,9 @@ namespace ProjetoProcessamentoImagens
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-
+            CadastrarPropriedade cadastrarPropriedade = new CadastrarPropriedade();
+            cadastrarPropriedade.Show();
+            this.Hide();
         }
 
         private void btnCadastrarNovo_Click(object sender, EventArgs e)

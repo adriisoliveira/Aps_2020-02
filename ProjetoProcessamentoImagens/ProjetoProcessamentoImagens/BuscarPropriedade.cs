@@ -7,19 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
-using System.Drawing.Imaging;
 
 namespace ProjetoProcessamentoImagens
 {
-    public partial class CadastrarUsuarios : Form
+    public partial class BuscarPropriedade : Form
     {
-        public CadastrarUsuarios()
+        public BuscarPropriedade()
         {
             InitializeComponent();
         }
 
-        private void btnCadastrarBiometria_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
 
         }
@@ -33,16 +31,15 @@ namespace ProjetoProcessamentoImagens
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtId.Clear();
-            txtNome.Clear();
-            txtTelefone.Clear();
-            txtSenha.Clear();
-            txtNomeUsuario.Clear();
+            txtCnpj.Clear();
+            txtResultados.Clear();
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
-
+            TelaInicio telaInicio = new TelaInicio();
+            telaInicio.Show();
+            this.Hide();
         }
     }
 }
