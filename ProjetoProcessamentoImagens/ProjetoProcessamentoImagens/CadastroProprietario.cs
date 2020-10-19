@@ -16,5 +16,22 @@ namespace ProjetoProcessamentoImagens
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtId.Clear();
+            txtNome.Clear();
+            txtUsuario.Clear();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

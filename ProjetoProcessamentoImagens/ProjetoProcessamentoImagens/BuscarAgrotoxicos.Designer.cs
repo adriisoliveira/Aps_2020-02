@@ -1,6 +1,6 @@
 ﻿namespace ProjetoProcessamentoImagens
 {
-    partial class BuscarAgrotóxicos
+    partial class BuscarAgrotoxicos
     {
         /// <summary>
         /// Required designer variable.
@@ -117,6 +117,7 @@
             this.btnBuscaId.TabIndex = 16;
             this.btnBuscaId.Text = "Buscar";
             this.btnBuscaId.UseVisualStyleBackColor = true;
+            this.btnBuscaId.Click += new System.EventHandler(this.btnBuscaId_Click);
             // 
             // btnBuscaNome
             // 
@@ -127,6 +128,7 @@
             this.btnBuscaNome.TabIndex = 17;
             this.btnBuscaNome.Text = "Buscar";
             this.btnBuscaNome.UseVisualStyleBackColor = true;
+            this.btnBuscaNome.Click += new System.EventHandler(this.btnBuscaNome_Click);
             // 
             // pnlResultados
             // 
@@ -165,6 +167,7 @@
             this.btnCancelar.TabIndex = 52;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnLimpar
             // 
@@ -175,6 +178,7 @@
             this.btnLimpar.TabIndex = 51;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSair
             // 
@@ -185,8 +189,9 @@
             this.btnSair.TabIndex = 50;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // BuscarAgrotóxicos
+            // BuscarAgrotoxicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -204,7 +209,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "BuscarAgrotóxicos";
+            this.Name = "BuscarAgrotoxicos";
             this.Text = "Buscar Agrotóxicos";
             this.pnlResultados.ResumeLayout(false);
             this.pnlResultados.PerformLayout();

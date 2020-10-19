@@ -16,5 +16,25 @@ namespace ProjetoProcessamentoImagens
         {
             InitializeComponent();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrarNovo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSelecionar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

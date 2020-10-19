@@ -93,6 +93,7 @@
             this.btnBuscar.TabIndex = 19;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnSelecionar
             // 
@@ -103,6 +104,7 @@
             this.btnSelecionar.TabIndex = 20;
             this.btnSelecionar.Text = "Selecionar";
             this.btnSelecionar.UseVisualStyleBackColor = true;
+            this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             // 
             // btnCadastrarNovo
             // 
@@ -113,6 +115,7 @@
             this.btnCadastrarNovo.TabIndex = 21;
             this.btnCadastrarNovo.Text = "Cadastrar Novo";
             this.btnCadastrarNovo.UseVisualStyleBackColor = true;
+            this.btnCadastrarNovo.Click += new System.EventHandler(this.btnCadastrarNovo_Click);
             // 
             // btnVoltar
             // 
@@ -123,6 +126,7 @@
             this.btnVoltar.TabIndex = 22;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // BuscarProprietario
             // 
