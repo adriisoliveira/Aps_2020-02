@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AquisicaoBiometria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AquisicaoBiometria.Designer.cs">
+      <DependentUpon>AquisicaoBiometria.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarAgrotoxicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AquisicaoBiometria.resx">
+      <DependentUpon>AquisicaoBiometria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarAgrotoxicos.resx">
       <DependentUpon>BuscarAgrotoxicos.cs</DependentUpon>
     </EmbeddedResource>
