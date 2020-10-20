@@ -17,3 +17,4 @@ C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoIm
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.pdb
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.BuscarPropriedade.resources
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.AquisicaoBiometria.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.ConsultarUsuarios.resources

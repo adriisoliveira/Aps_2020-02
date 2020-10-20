@@ -95,6 +95,17 @@
       <DependentUpon>CadastrarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexao.cs" />
+    <Compile Include="ConsultarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarUsuarios.Designer.cs">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ministerio_MeioAmbienteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ministerio_MeioAmbienteDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +144,9 @@
     <EmbeddedResource Include="CadastroProprietario.resx">
       <DependentUpon>CadastroProprietario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarUsuarios.resx">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaInicio.resx">
       <DependentUpon>TelaInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +162,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Ministerio_MeioAmbienteDataSet.xsc">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ministerio_MeioAmbienteDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet.xss">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

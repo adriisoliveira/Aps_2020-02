@@ -44,6 +44,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lbxClassificacao = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -88,7 +90,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(134, 71);
+            this.label4.Location = new System.Drawing.Point(102, 71);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 13;
@@ -108,14 +110,14 @@
             // 
             this.txtId.Location = new System.Drawing.Point(43, 70);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(85, 20);
+            this.txtId.Size = new System.Drawing.Size(40, 20);
             this.txtId.TabIndex = 15;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(188, 70);
+            this.txtNome.Location = new System.Drawing.Point(156, 71);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(349, 20);
+            this.txtNome.Size = new System.Drawing.Size(119, 20);
             this.txtNome.TabIndex = 16;
             // 
             // txtDescricao
@@ -195,11 +197,36 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(310, 71);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(92, 16);
+            this.label8.TabIndex = 50;
+            this.label8.Text = "Classificação:";
+            // 
+            // lbxClassificacao
+            // 
+            this.lbxClassificacao.FormattingEnabled = true;
+            this.lbxClassificacao.Items.AddRange(new object[] {
+            "Selecione",
+            "Herbicida",
+            "Fungicida",
+            "Inseticida"});
+            this.lbxClassificacao.Location = new System.Drawing.Point(408, 70);
+            this.lbxClassificacao.Name = "lbxClassificacao";
+            this.lbxClassificacao.Size = new System.Drawing.Size(129, 17);
+            this.lbxClassificacao.TabIndex = 51;
+            // 
             // CadastrarAgrotoxico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 467);
+            this.Controls.Add(this.lbxClassificacao);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCadastrar);
@@ -242,5 +269,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ListBox lbxClassificacao;
     }
 }

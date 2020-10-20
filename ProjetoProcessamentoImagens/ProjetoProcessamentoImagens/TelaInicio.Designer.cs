@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrarPropriedade = new System.Windows.Forms.Button();
             this.btnBuscarAgrotoxico = new System.Windows.Forms.Button();
-            this.btnBuscaAvancada = new System.Windows.Forms.Button();
+            this.btnConsultarUsuarios = new System.Windows.Forms.Button();
             this.btnCadastarUsuarios = new System.Windows.Forms.Button();
             this.btnCadastrarAgrotoxico = new System.Windows.Forms.Button();
             this.btnBuscarPropriedade = new System.Windows.Forms.Button();
@@ -101,16 +101,16 @@
             this.btnBuscarAgrotoxico.UseVisualStyleBackColor = true;
             this.btnBuscarAgrotoxico.Click += new System.EventHandler(this.btnBuscarAgrotoxico_Click);
             // 
-            // btnBuscaAvancada
+            // btnConsultarUsuarios
             // 
-            this.btnBuscaAvancada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscaAvancada.Location = new System.Drawing.Point(393, 85);
-            this.btnBuscaAvancada.Name = "btnBuscaAvancada";
-            this.btnBuscaAvancada.Size = new System.Drawing.Size(169, 48);
-            this.btnBuscaAvancada.TabIndex = 13;
-            this.btnBuscaAvancada.Text = "Busca Avançada";
-            this.btnBuscaAvancada.UseVisualStyleBackColor = true;
-            this.btnBuscaAvancada.Click += new System.EventHandler(this.btnBuscaAvancada_Click);
+            this.btnConsultarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarUsuarios.Location = new System.Drawing.Point(393, 85);
+            this.btnConsultarUsuarios.Name = "btnConsultarUsuarios";
+            this.btnConsultarUsuarios.Size = new System.Drawing.Size(169, 48);
+            this.btnConsultarUsuarios.TabIndex = 13;
+            this.btnConsultarUsuarios.Text = "Consultar Usuários";
+            this.btnConsultarUsuarios.UseVisualStyleBackColor = true;
+            this.btnConsultarUsuarios.Click += new System.EventHandler(this.btnConsultarUsuarios_Click);
             // 
             // btnCadastarUsuarios
             // 
@@ -156,7 +156,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCadastrarPropriedade);
             this.Controls.Add(this.btnBuscarAgrotoxico);
-            this.Controls.Add(this.btnBuscaAvancada);
+            this.Controls.Add(this.btnConsultarUsuarios);
             this.Controls.Add(this.btnCadastarUsuarios);
             this.Controls.Add(this.btnCadastrarAgrotoxico);
             this.Controls.Add(this.btnBuscarPropriedade);
@@ -176,7 +176,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCadastrarPropriedade;
         private System.Windows.Forms.Button btnBuscarAgrotoxico;
-        private System.Windows.Forms.Button btnBuscaAvancada;
+        private System.Windows.Forms.Button btnConsultarUsuarios;
         private System.Windows.Forms.Button btnCadastarUsuarios;
         private System.Windows.Forms.Button btnCadastrarAgrotoxico;
         private System.Windows.Forms.Button btnBuscarPropriedade;

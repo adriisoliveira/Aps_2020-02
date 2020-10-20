@@ -37,10 +37,6 @@ namespace ProjetoProcessamentoImagens
 
         }
 
-        private void btnBuscaAvancada_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCadastrarPropriedade_Click(object sender, EventArgs e)
         {
@@ -68,6 +64,13 @@ namespace ProjetoProcessamentoImagens
         {
             TelaLogin telaLogin = new TelaLogin();
             telaLogin.Show();
+            this.Hide();
+        }
+
+        private void btnConsultarUsuarios_Click(object sender, EventArgs e)
+        {
+            ConsultarUsuarios consultarUsuarios = new ConsultarUsuarios();
+            consultarUsuarios.Show();
             this.Hide();
         }
     }
