@@ -35,11 +35,11 @@
             this.txtCnpj = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.SuspendLayout();
@@ -109,6 +109,14 @@
             this.panel1.Size = new System.Drawing.Size(774, 167);
             this.panel1.TabIndex = 25;
             // 
+            // dgvResultados
+            // 
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Location = new System.Drawing.Point(4, 20);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.Size = new System.Drawing.Size(767, 144);
+            this.dgvResultados.TabIndex = 27;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -128,18 +136,18 @@
             this.btnCancelar.TabIndex = 55;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(385, 274);
+            this.btnLimpar.Location = new System.Drawing.Point(360, 274);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(121, 30);
             this.btnLimpar.TabIndex = 54;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click_1);
             // 
             // btnSair
             // 
@@ -150,15 +158,7 @@
             this.btnSair.TabIndex = 53;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // dgvResultados
-            // 
-            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultados.Location = new System.Drawing.Point(4, 20);
-            this.dgvResultados.Name = "dgvResultados";
-            this.dgvResultados.Size = new System.Drawing.Size(767, 144);
-            this.dgvResultados.TabIndex = 27;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
             // 
             // BuscarPropriedade
             // 

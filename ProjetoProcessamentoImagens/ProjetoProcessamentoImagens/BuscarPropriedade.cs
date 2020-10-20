@@ -20,60 +20,65 @@ namespace ProjetoProcessamentoImagens
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Conexao conexao = new Conexao();
-            string cnpj = txtCnpj.Text;
-            SqlCommand cmd = new SqlCommand();
-            string query = "SELECT CNPJ_Propriedade FROM Propriedade WHERE CNPJ_Propriedade=@cnpj";
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = query;
-            cmd.Parameters.AddWithValue("@cnpj", cnpj);
-
-            //Conectar com o banco
             try
             {
-                //o que o programa vai executar dentro do banco de dados
-                //cmd.Connection vai receber o endereço do banco de dados
+                Conexao conexao = new Conexao();
+                //MessageBox.Show(cbxCarregar.SelectedValue.ToString());
+                SqlCommand cmd = new SqlCommand();
+                string cnpj = txtCnpj.Text;
                 cmd.Connection = conexao.Conectar();
-
-                //Ler os dados no banco e comparar
+                cmd.CommandText = ("select * from Propriedade WHERE CNPJ_Propriedade=@cnpj");
+                //O campo SelectedValue se refere ao que eu selecionar na ComboBox
+                cmd.CommandType = CommandType.Text;
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     cnpj = reader["CNPJ_Propriedade"].ToString();
-                    dgvResultados = 
                 }
-
                 else
                 {
-                    MessageBox.Show("CNPJ INEXISTENTE!!");
+                    MessageBox.Show("CNPJ INEXISTENTE!");
                 }
-                reader.Close();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dgvResultados.DataSource = dt;
+
+                //dtaInfo.Rows.RemoveAt(dtaInfo.RowCount);
+
+                dgvResultados.AllowUserToAddRows = false;
+
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
-            }
-            catch (SqlException ex)
-            {
 
-                //caso de algum erro ja na conexão o programa ja pula para o cath
-                //para tentar resolver
-                MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!");
             }
+            catch (Exception exe)
+            {
+                MessageBox.Show("ERRO AO CARREGAR DADOS!\n" + exe.Message);
+            }
+
+            string info = "";
+            info = dgvResultados.SelectedRows[0].Cells[1].Value.ToString();
+            
+
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             TelaInicio telaInicio = new TelaInicio();
             telaInicio.Show();
             this.Hide();
         }
 
-        private void btnLimpar_Click(object sender, EventArgs e)
+        private void btnLimpar_Click_1(object sender, EventArgs e)
         {
             txtCnpj.Clear();
-            txtResultados.Clear();
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void btnSair_Click_1(object sender, EventArgs e)
         {
             TelaInicio telaInicio = new TelaInicio();
             telaInicio.Show();

@@ -39,13 +39,13 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.txtRg = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -111,9 +111,10 @@
             // 
             // txtId
             // 
+            this.txtId.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtId.Location = new System.Drawing.Point(43, 61);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(70, 20);
+            this.txtId.Size = new System.Drawing.Size(51, 20);
             this.txtId.TabIndex = 53;
             // 
             // label7
@@ -128,16 +129,16 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(176, 58);
+            this.txtNome.Location = new System.Drawing.Point(154, 58);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(412, 20);
+            this.txtNome.Size = new System.Drawing.Size(434, 20);
             this.txtNome.TabIndex = 51;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(119, 62);
+            this.label3.Location = new System.Drawing.Point(100, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 50;
@@ -153,12 +154,12 @@
             this.label4.TabIndex = 54;
             this.label4.Text = "Email:";
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(508, 20);
-            this.textBox1.TabIndex = 55;
+            this.txtEmail.Location = new System.Drawing.Point(80, 100);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(508, 20);
+            this.txtEmail.TabIndex = 55;
             // 
             // label5
             // 
@@ -190,39 +191,39 @@
             this.label8.TabIndex = 58;
             this.label8.Text = "RG:";
             // 
-            // textBox2
+            // txtCpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(433, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 20);
-            this.textBox2.TabIndex = 59;
+            this.txtCpf.Location = new System.Drawing.Point(433, 135);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(155, 20);
+            this.txtCpf.TabIndex = 59;
             // 
-            // textBox3
+            // txtRg
             // 
-            this.textBox3.Location = new System.Drawing.Point(245, 137);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 20);
-            this.textBox3.TabIndex = 60;
+            this.txtRg.Location = new System.Drawing.Point(245, 137);
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(125, 20);
+            this.txtRg.TabIndex = 60;
             // 
-            // textBox4
+            // txtTelefone
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(104, 20);
-            this.textBox4.TabIndex = 61;
+            this.txtTelefone.Location = new System.Drawing.Point(84, 138);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(104, 20);
+            this.txtTelefone.TabIndex = 61;
             // 
             // CadastroProprietario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 249);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtRg);
+            this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label7);
@@ -254,12 +255,12 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.TextBox txtRg;
+        private System.Windows.Forms.TextBox txtTelefone;
     }
 }

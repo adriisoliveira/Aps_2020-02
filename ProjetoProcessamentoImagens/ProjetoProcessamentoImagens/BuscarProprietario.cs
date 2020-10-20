@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,35 @@ namespace ProjetoProcessamentoImagens
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Conexao conexao = new Conexao();
+                //MessageBox.Show(cbxCarregar.SelectedValue.ToString());
+                SqlCommand cmd = new SqlCommand();
+                string cpf = txtCpf.Text;
+                string nome = "";
+                cmd.Connection = conexao.Conectar();
+                cmd.CommandText = ("select Nome_Proprietario from Propriedade WHERE CPF_Proprietario=@cpf");
+                //O campo SelectedValue se refere ao que eu selecionar na ComboBox
+                cmd.CommandType = CommandType.Text;
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    cpf = reader["CPF_Proprietario"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("CNPF INEXISTENTE!");
+                }
 
+                cmd.ExecuteNonQuery();
+                conexao.desconectar();
+
+            }
+            catch (Exception exe)
+            {
+                MessageBox.Show("ERRO AO CARREGAR DADOS!\n" + exe.Message);
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -31,12 +60,14 @@ namespace ProjetoProcessamentoImagens
 
         private void btnCadastrarNovo_Click(object sender, EventArgs e)
         {
-
+            CadastroProprietario cadastroProprietario = new CadastroProprietario();
+            cadastroProprietario.Show();
+            this.Hide();
         }
 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-
+            string proprietario = txtCpf.Text();
         }
     }
 }

@@ -32,7 +32,7 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnSelecionar = new System.Windows.Forms.Button();
             this.btnCadastrarNovo = new System.Windows.Forms.Button();
@@ -77,12 +77,12 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "CPF:";
             // 
-            // textBox1
+            // txtCpf
             // 
-            this.textBox1.Location = new System.Drawing.Point(66, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 20);
-            this.textBox1.TabIndex = 18;
+            this.txtCpf.Location = new System.Drawing.Point(66, 76);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(202, 20);
+            this.txtCpf.TabIndex = 18;
             // 
             // btnBuscar
             // 
@@ -137,7 +137,7 @@
             this.Controls.Add(this.btnCadastrarNovo);
             this.Controls.Add(this.btnSelecionar);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
@@ -155,7 +155,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnSelecionar;
         private System.Windows.Forms.Button btnCadastrarNovo;
