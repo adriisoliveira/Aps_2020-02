@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ministerio_MeioAmbienteDataSet2" targetNamespace="http://tempuri.org/Ministerio_MeioAmbienteDataSet2.xsd" xmlns:mstns="http://tempuri.org/Ministerio_MeioAmbienteDataSet2.xsd" xmlns="http://tempuri.org/Ministerio_MeioAmbienteDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Ministerio_MeioAmbienteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Ministerio_MeioAmbienteConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProjetoProcessamentoImagens.Properties.Settings.GlobalReference.Default.Ministerio_MeioAmbienteConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CidadeTableAdapter" GeneratorDataComponentClassName="CidadeTableAdapter" Name="Cidade" UserDataComponentName="CidadeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Ministerio_MeioAmbienteConnectionString (Settings)" DbObjectName="Ministerio_MeioAmbiente.dbo.Cidade" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nome_Cidade FROM dbo.Cidade</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nome_Cidade" DataSetColumn="Nome_Cidade" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ministerio_MeioAmbienteDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Ministerio_MeioAmbienteDataSet2" msprop:Generator_UserDSName="Ministerio_MeioAmbienteDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cidade" msprop:Generator_TableClassName="CidadeDataTable" msprop:Generator_TableVarName="tableCidade" msprop:Generator_TablePropName="Cidade" msprop:Generator_RowDeletingName="CidadeRowDeleting" msprop:Generator_RowChangingName="CidadeRowChanging" msprop:Generator_RowEvHandlerName="CidadeRowChangeEventHandler" msprop:Generator_RowDeletedName="CidadeRowDeleted" msprop:Generator_UserTableName="Cidade" msprop:Generator_RowChangedName="CidadeRowChanged" msprop:Generator_RowEvArgName="CidadeRowChangeEvent" msprop:Generator_RowClassName="CidadeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nome_Cidade" msprop:Generator_ColumnVarNameInTable="columnNome_Cidade" msprop:Generator_ColumnPropNameInRow="Nome_Cidade" msprop:Generator_ColumnPropNameInTable="Nome_CidadeColumn" msprop:Generator_UserColumnName="Nome_Cidade">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
