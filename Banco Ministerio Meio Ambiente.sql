@@ -4,16 +4,17 @@ use Ministerio_MeioAmbiente
 
 
 create table Usuario (
-	ID_Usuario int primary key IDENTITY NOT NULL,
+	ID_Usuario int primary key IDENTITY(1,1) NOT NULL,
 	Biometria varchar (255),
 	Nome varchar (255),
 	Telefone varchar (23),
 	Tipo_Acesso int,
+	UsuarioLogin varchar (255),
 	Senha varchar (255)
 );
 
 create table Proprietario (
-	ID_Proprietario int primary key IDENTITY NOT NULL,
+	ID_Proprietario int primary key IDENTITY(1,1) NOT NULL,
 	Nome_Proprietario varchar (255),
 	Email_Proprietario varchar (255),
 	Telefone_Proprierario varchar (23),
@@ -22,20 +23,21 @@ create table Proprietario (
 );
 
 CREATE TABLE Estado(
-    ID_Estado INT NOT NULL PRIMARY KEY IDENTITY,
+    ID_Estado INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     Nome_Estado VARCHAR(255) NOT NULL,
     UF VARCHAR(3) NOT NULL
 );
 
+
 CREATE TABLE Cidade(
-    ID_Cidade INT NOT NULL PRIMARY KEY IDENTITY,
+    ID_Cidade INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     Nome_Cidade VARCHAR(255) NOT NULL,
     ID_Estado INT NOT NULL,
     FOREIGN KEY (ID_Estado) REFERENCES Estado(ID_Estado)
 );
 
 create table Propriedade (
-	ID_Propriedade int primary key IDENTITY NOT NULL,
+	ID_Propriedade int primary key IDENTITY(1,1) NOT NULL,
 	CNPJ_Propriedade varchar (15),
 	Nome varchar (255),
 	Endereco varchar (255),
@@ -49,9 +51,10 @@ create table Propriedade (
 
 
 CREATE TABLE Agrotoxico(
-    ID_Agrotoxico INT NOT NULL PRIMARY KEY IDENTITY,
+    ID_Agrotoxico INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     Nome_Agrotoxico VARCHAR(255) NOT NULL,
     Descricao TEXT,
+	Classificacao TEXT NOT NULL,
     Composicao TEXT NOT NULL,
     Permissao INT NOT NULL
 );
@@ -64,4 +67,3 @@ CREATE TABLE Agrotoxico_Propriedade(
     FOREIGN KEY (ID_Agrotoxico) REFERENCES agrotoxico(ID_Agrotoxico),
     FOREIGN KEY (ID_Propriedade) REFERENCES propriedade(ID_Propriedade)
 );
-
