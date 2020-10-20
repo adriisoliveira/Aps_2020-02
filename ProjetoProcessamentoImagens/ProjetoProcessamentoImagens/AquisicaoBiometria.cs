@@ -15,7 +15,7 @@ namespace ProjetoProcessamentoImagens
         public AquisicaoBiometria()
         {
             InitializeComponent();
-            pbImagem.Image = Image.FromFile("");
+            pbImagem.Image = Image.FromFile("C:\\Users\\Drih\\Pictures\teste.jpeg");
             //colocar local de arquivo da img
         }
 
@@ -27,6 +27,18 @@ namespace ProjetoProcessamentoImagens
             openFileDialog1.CheckPathExists = true;
             openFileDialog1.OpenFile();
             pbImagem.Image = Image.FromFile(openFileDialog1.FileName);
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            CadastrarUsuarios cadastrarUsuarios = new CadastrarUsuarios();
+            cadastrarUsuarios.Show();
+            this.Hide();
         }
     }
 }

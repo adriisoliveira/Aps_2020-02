@@ -10,11 +10,12 @@ namespace ProjetoProcessamentoImagens
     class Conexao
     {
         //Cria conexão com o banco
-        SqlConnection con = new SqlConnection();
+        SqlConnection con;
 
-        //metodo construtor
+        //Metodo construtor
         public Conexao()
         {
+            con = new SqlConnection();
             con.ConnectionString = "Data Source=LAPTOP-19CP4RFH\\DRIH;Initial Catalog=Ministerio_MeioAmbiente;Integrated Security=True";
         }
 

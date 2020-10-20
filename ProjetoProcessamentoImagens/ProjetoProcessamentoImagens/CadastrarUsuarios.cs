@@ -21,7 +21,9 @@ namespace ProjetoProcessamentoImagens
 
         private void btnCadastrarBiometria_Click(object sender, EventArgs e)
         {
-
+            AquisicaoBiometria aquisicaoBiometria = new AquisicaoBiometria();
+            aquisicaoBiometria.Show();
+            this.Hide();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

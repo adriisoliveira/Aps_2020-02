@@ -20,7 +20,7 @@ namespace ProjetoProcessamentoImagens
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            txtUsuario.Focus();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace ProjetoProcessamentoImagens
             string usuario = txtUsuario.Text;
             string senha = txtSenha.Text;
             SqlCommand cmd = new SqlCommand();
-            string query = "SELECT UsuarioLogin, Senha FROM Usuarios WHERE UsuarioLogin=@usuario and Senha=@senha";
+            string query = "SELECT UsuarioLogin, Senha FROM Usuario WHERE UsuarioLogin=@usuario and Senha=@senha";
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = query;
             cmd.Parameters.AddWithValue("@usuario", usuario);
@@ -58,8 +58,6 @@ namespace ProjetoProcessamentoImagens
                     this.Hide();
                 }
 
-
-
                 else
                 {
                     MessageBox.Show("Login ou senha incorretos!");
@@ -73,7 +71,7 @@ namespace ProjetoProcessamentoImagens
 
                 //caso de algum erro ja na conexão o programa ja pula para o cath
                 //para tentar resolver
-                MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!");
+                MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!",ex.Message);
             }
 
 
