@@ -108,6 +108,7 @@
             // 
             // txtId
             // 
+            this.txtId.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtId.Location = new System.Drawing.Point(43, 70);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(40, 20);
