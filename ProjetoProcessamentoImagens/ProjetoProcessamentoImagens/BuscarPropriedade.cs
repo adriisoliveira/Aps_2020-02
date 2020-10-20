@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ProjetoProcessamentoImagens
 {
-    public partial class BuscarPropriedade : Form
+    public partial class rtbResultados : Form
     {
-        public BuscarPropriedade()
+        public rtbResultados()
         {
             InitializeComponent();
         }
@@ -27,9 +27,10 @@ namespace ProjetoProcessamentoImagens
                 SqlCommand cmd = new SqlCommand();
                 string cnpj = txtCnpj.Text;
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = ("select * from Propriedade WHERE CNPJ_Propriedade=@cnpj");
+                cmd.CommandText = ("select * from Propriedade WHERE CNPJ_Propriedade =@cnpj");
                 //O campo SelectedValue se refere ao que eu selecionar na ComboBox
                 cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@cnpj", cnpj);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
@@ -39,7 +40,7 @@ namespace ProjetoProcessamentoImagens
                 {
                     MessageBox.Show("CNPJ INEXISTENTE!");
                 }
-
+                reader.Close();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                 DataTable dt = new DataTable();
@@ -51,6 +52,10 @@ namespace ProjetoProcessamentoImagens
 
                 dgvResultados.AllowUserToAddRows = false;
 
+                /*string info = "";
+                info = dgvResultados.SelectedRows[0].Cells[1].Value.ToString();
+                rtbResultados. = info;*/
+
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
 
@@ -60,9 +65,7 @@ namespace ProjetoProcessamentoImagens
                 MessageBox.Show("ERRO AO CARREGAR DADOS!\n" + exe.Message);
             }
 
-            string info = "";
-            info = dgvResultados.SelectedRows[0].Cells[1].Value.ToString();
-            
+           
 
         }
 
@@ -83,6 +86,13 @@ namespace ProjetoProcessamentoImagens
             TelaInicio telaInicio = new TelaInicio();
             telaInicio.Show();
             this.Hide();
+        }
+
+        private void rtbResultados_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet3.Propriedade'. Você pode movê-la ou removê-la conforme necessário.
+            this.propriedadeTableAdapter.Fill(this.ministerio_MeioAmbienteDataSet3.Propriedade);
+
         }
     }
 }

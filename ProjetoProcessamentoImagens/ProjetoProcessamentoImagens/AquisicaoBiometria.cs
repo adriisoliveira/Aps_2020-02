@@ -15,7 +15,7 @@ namespace ProjetoProcessamentoImagens
         public AquisicaoBiometria()
         {
             InitializeComponent();
-            pbImagem.Image = Image.FromFile("C:\\Users\\Drih\\Pictures\teste.jpeg");
+            pbImagem.Image = Image.FromFile("‪C:\\Users\\Drih\\Pictures");
             //colocar local de arquivo da img
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace ProjetoProcessamentoImagens
 {
-    partial class BuscarPropriedade
+    partial class rtbResultados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,8 +41,13 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.ministerio_MeioAmbienteDataSet3 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3();
+            this.propriedadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.propriedadeTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3TableAdapters.PropriedadeTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -111,10 +117,12 @@
             // 
             // dgvResultados
             // 
+            this.dgvResultados.AllowUserToOrderColumns = true;
             this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultados.Location = new System.Drawing.Point(4, 20);
+            this.dgvResultados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvResultados.Location = new System.Drawing.Point(0, 0);
             this.dgvResultados.Name = "dgvResultados";
-            this.dgvResultados.Size = new System.Drawing.Size(767, 144);
+            this.dgvResultados.Size = new System.Drawing.Size(774, 167);
             this.dgvResultados.TabIndex = 27;
             // 
             // label4
@@ -160,7 +168,21 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
             // 
-            // BuscarPropriedade
+            // ministerio_MeioAmbienteDataSet3
+            // 
+            this.ministerio_MeioAmbienteDataSet3.DataSetName = "Ministerio_MeioAmbienteDataSet3";
+            this.ministerio_MeioAmbienteDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // propriedadeBindingSource
+            // 
+            this.propriedadeBindingSource.DataMember = "Propriedade";
+            this.propriedadeBindingSource.DataSource = this.ministerio_MeioAmbienteDataSet3;
+            // 
+            // propriedadeTableAdapter
+            // 
+            this.propriedadeTableAdapter.ClearBeforeFill = true;
+            // 
+            // rtbResultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -175,11 +197,14 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "BuscarPropriedade";
+            this.Name = "rtbResultados";
             this.Text = "BuscarPropriedade";
+            this.Load += new System.EventHandler(this.rtbResultados_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +224,8 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.DataGridView dgvResultados;
+        private Ministerio_MeioAmbienteDataSet3 ministerio_MeioAmbienteDataSet3;
+        private System.Windows.Forms.BindingSource propriedadeBindingSource;
+        private Ministerio_MeioAmbienteDataSet3TableAdapters.PropriedadeTableAdapter propriedadeTableAdapter;
     }
 }

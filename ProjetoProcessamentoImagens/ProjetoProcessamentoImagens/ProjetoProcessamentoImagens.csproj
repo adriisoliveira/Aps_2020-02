@@ -116,6 +116,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ministerio_MeioAmbienteDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Ministerio_MeioAmbienteDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ministerio_MeioAmbienteDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +209,17 @@
     </None>
     <None Include="Ministerio_MeioAmbienteDataSet2.xss">
       <DependentUpon>Ministerio_MeioAmbienteDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet3.xsc">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ministerio_MeioAmbienteDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet3.xss">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
