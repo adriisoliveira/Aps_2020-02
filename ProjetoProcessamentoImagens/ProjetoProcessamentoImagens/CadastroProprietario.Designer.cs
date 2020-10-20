@@ -112,6 +112,8 @@
             // txtId
             // 
             this.txtId.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtId.Enabled = false;
+            this.txtId.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.txtId.Location = new System.Drawing.Point(43, 61);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(51, 20);

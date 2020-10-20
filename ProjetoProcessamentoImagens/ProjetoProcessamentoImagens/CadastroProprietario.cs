@@ -46,7 +46,7 @@ namespace ProjetoProcessamentoImagens
                 cmd.Connection = conexao.Conectar();
                 //Comandos SQL para inserir os dados no banco
                 //Para escrever os comandos precisa da classe SqlCommand
-                cmd.CommandText = "INSERT INTO Proprietario (Nome_Proprietario,Email_Proprietario,Telefone_Proprierario,CPF_Proprietario,RG_Proprietario) values ('" +txtNome.Text+ "','" +txtEmail.Text+ "',+'" +txtTelefone.Text + "','"+ txtRg.Text + "','" + txtCpf.Text + "')";
+                cmd.CommandText = "INSERT INTO Proprietario (Nome_Proprietario,Email_Proprietario,Telefone_Proprierario,CPF_Proprietario,RG_Proprietario) values ('" +txtNome.Text+ "','" +txtEmail.Text+ "',+'" +txtTelefone.Text + "','"+ txtCpf.Text + "','" + txtRg.Text + "')";
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
 
