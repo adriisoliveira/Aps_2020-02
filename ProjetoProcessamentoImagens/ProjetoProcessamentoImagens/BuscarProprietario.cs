@@ -26,15 +26,17 @@ namespace ProjetoProcessamentoImagens
                 //MessageBox.Show(cbxCarregar.SelectedValue.ToString());
                 SqlCommand cmd = new SqlCommand();
                 string cpf = txtCpf.Text;
-                string nome = "";
+                string id = "";
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = ("select Nome_Proprietario from Propriedade WHERE CPF_Proprietario=@cpf");
+                cmd.CommandText = ("select ID_Proprietario,CPF_Proprietario from Propriedade WHERE CPF_Proprietario=@cpf");
                 //O campo SelectedValue se refere ao que eu selecionar na ComboBox
                 cmd.CommandType = CommandType.Text;
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     cpf = reader["CPF_Proprietario"].ToString();
+                    id = reader["ID_Proprietario"].ToString();
+                    txtCpf.Text = id;
                 }
                 else
                 {
