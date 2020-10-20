@@ -20,14 +20,18 @@ namespace ProjetoProcessamentoImagens
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            BuscarProprietario buscarProprietario = new BuscarProprietario();
+            buscarProprietario.Show();
+            this.Hide();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtId.Clear();
             txtNome.Clear();
-            txtUsuario.Clear();
+            txtEmail.Clear();
+            txtTelefone.Clear();
+            txtRg.Clear();
+            txtCpf.Clear();
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -42,7 +46,7 @@ namespace ProjetoProcessamentoImagens
                 cmd.Connection = conexao.Conectar();
                 //Comandos SQL para inserir os dados no banco
                 //Para escrever os comandos precisa da classe SqlCommand
-                cmd.CommandText = "INSERT INTO Proprietario (Nome_Proprietario,Email_Proprietario,Telefone_Proprierario,CPF_Proprietario,RG_Proprietario) values ('" + txtNome.Text + "','" + txtEmail.Text + "',+'" + txtTelefone.Text + "','"+ txtRg.Text + "','" + txtCpf.Text + "')";
+                cmd.CommandText = "INSERT INTO Proprietario (Nome_Proprietario,Email_Proprietario,Telefone_Proprierario,CPF_Proprietario,RG_Proprietario) values ('" +txtNome.Text+ "','" +txtEmail.Text+ "',+'" +txtTelefone.Text + "','"+ txtRg.Text + "','" + txtCpf.Text + "')";
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
 

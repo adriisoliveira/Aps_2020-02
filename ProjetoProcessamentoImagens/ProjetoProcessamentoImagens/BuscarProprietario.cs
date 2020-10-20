@@ -67,7 +67,7 @@ namespace ProjetoProcessamentoImagens
 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-            string proprietario = txtCpf.Text();
+            string proprietario = txtCpf.Text;
         }
     }
 }
