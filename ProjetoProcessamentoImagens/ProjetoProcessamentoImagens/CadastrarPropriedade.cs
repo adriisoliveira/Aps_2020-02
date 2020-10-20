@@ -54,7 +54,6 @@ namespace ProjetoProcessamentoImagens
             txtTamanho.Clear();
             txtTipoProducao.Clear();
             lbxCidade.ClearSelected();
-            lbxEstado.ClearSelected();
         }
 
         private void lbxEstado_SelectedIndexChanged(object sender, EventArgs e)
@@ -69,39 +68,38 @@ namespace ProjetoProcessamentoImagens
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
-            /*try
+            try
             {
+                Conexao conexao = new Conexao();
+                //MessageBox.Show(cbxCarregar.SelectedValue.ToString());
+                SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conexao.Conectar();
-                //Comandos SQL para inserir os dados no banco
-                //Para escrever os comandos precisa da classe SqlCommand
-                cmd.CommandText = "INSERT INTO Agrotoxico (Nome_Agrotoxico,Descricao,Classificacao,Composicao,Permissao) values ('" + txtNome.Text + "', '" + txtDescricao.Text + "','" + lbxClassificacao.Text + "',+'" + txtComposicao.Text + "','" + txtPermissao.Text + "')";
+                string nomeCidade = lbxCidade.Text;
+                cmd.CommandText = ("SELECT ID_Cidade FROM Cidade WHERE Nome_Cidade=@nomeCidade");
+                cmd.Parameters.AddWithValue("@nomeCidade", nomeCidade);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    nomeCidade = reader["Nome_Cidade"].ToString();
+                    lbxCidade.Text = nomeCidade;
+                }
+                else
+                {
+                    MessageBox.Show("CIDADE INEXISTENTE!");
+                }
+                reader.Close();
 
 
+
+                cmd.CommandText = ("INSERT INTO Propriedade (CNPJ_Propriedade,Nome,Endereco,ID_Cidade,Tamanho,Producao,ID_Proprietario) VALUES ('" +txtCnpj.Text + "', '" + txtNome.Text + "', '" + txtEndereco.Text + "', +'" + lbxCidade.Text + "', '" + txtTamanho.Text + "', '" + txtTipoProducao.Text + "','"+txtProprietario.Text+"'");
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
 
-                MessageBox.Show("Cadastro feito com sucesso!!!");
             }
-            catch (SqlException ex)
+            catch (Exception exe)
             {
-
-                //caso de algum erro ja na conexão o programa ja pula para o cath
-                //para tentar resolver
-                MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!", ex.Message);
-            }*/
-        }
-
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.estadoTableAdapter.FillBy(this.ministerio_MeioAmbienteDataSet1.Estado);
+                MessageBox.Show("ERRO AO CADASTRAR DADOS!\n" + exe.Message);
             }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
         }
     }
 }
