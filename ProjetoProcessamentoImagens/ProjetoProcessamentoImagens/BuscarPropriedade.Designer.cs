@@ -36,17 +36,18 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtResultados = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtUsuario.Location = new System.Drawing.Point(408, 10);
+            this.txtUsuario.Location = new System.Drawing.Point(687, 9);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 21;
@@ -55,7 +56,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(343, 13);
+            this.label2.Location = new System.Drawing.Point(622, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 20;
@@ -101,11 +102,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtResultados);
+            this.panel1.Controls.Add(this.dgvResultados);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(16, 90);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(490, 167);
+            this.panel1.Size = new System.Drawing.Size(774, 167);
             this.panel1.TabIndex = 25;
             // 
             // label4
@@ -117,14 +118,6 @@
             this.label4.Size = new System.Drawing.Size(100, 16);
             this.label4.TabIndex = 26;
             this.label4.Text = "RESULTADOS";
-            // 
-            // txtResultados
-            // 
-            this.txtResultados.Location = new System.Drawing.Point(4, 20);
-            this.txtResultados.Multiline = true;
-            this.txtResultados.Name = "txtResultados";
-            this.txtResultados.Size = new System.Drawing.Size(483, 144);
-            this.txtResultados.TabIndex = 27;
             // 
             // btnCancelar
             // 
@@ -140,7 +133,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(200, 274);
+            this.btnLimpar.Location = new System.Drawing.Point(385, 274);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(121, 30);
             this.btnLimpar.TabIndex = 54;
@@ -151,7 +144,7 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(372, 274);
+            this.btnSair.Location = new System.Drawing.Point(669, 274);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(121, 30);
             this.btnSair.TabIndex = 53;
@@ -159,11 +152,19 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // dgvResultados
+            // 
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Location = new System.Drawing.Point(4, 20);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.Size = new System.Drawing.Size(767, 144);
+            this.dgvResultados.TabIndex = 27;
+            // 
             // BuscarPropriedade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 324);
+            this.ClientSize = new System.Drawing.Size(802, 324);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSair);
@@ -178,6 +179,7 @@
             this.Text = "BuscarPropriedade";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,9 +195,9 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtResultados;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.DataGridView dgvResultados;
     }
 }
