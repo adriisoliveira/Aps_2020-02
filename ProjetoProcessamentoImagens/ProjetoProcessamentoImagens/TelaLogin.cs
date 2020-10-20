@@ -71,7 +71,7 @@ namespace ProjetoProcessamentoImagens
 
                 //caso de algum erro ja na conexão o programa ja pula para o cath
                 //para tentar resolver
-                MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!",ex.Message);
+                MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!");
             }
 
 

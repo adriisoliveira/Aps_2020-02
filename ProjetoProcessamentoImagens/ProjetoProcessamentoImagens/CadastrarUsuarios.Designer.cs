@@ -124,6 +124,11 @@
             // lbxTipoAcesso
             // 
             this.lbxTipoAcesso.FormattingEnabled = true;
+            this.lbxTipoAcesso.Items.AddRange(new object[] {
+            "",
+            "1",
+            "2",
+            "3"});
             this.lbxTipoAcesso.Location = new System.Drawing.Point(330, 106);
             this.lbxTipoAcesso.Name = "lbxTipoAcesso";
             this.lbxTipoAcesso.Size = new System.Drawing.Size(39, 17);
