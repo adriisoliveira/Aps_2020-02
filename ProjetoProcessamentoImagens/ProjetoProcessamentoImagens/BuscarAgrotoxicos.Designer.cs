@@ -31,19 +31,17 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.btnBuscaId = new System.Windows.Forms.Button();
             this.btnBuscaNome = new System.Windows.Forms.Button();
             this.pnlResultados = new System.Windows.Forms.Panel();
-            this.txtResultados = new System.Windows.Forms.TextBox();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.pnlResultados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -74,55 +72,27 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Faça a busca que melhor se encaixe:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 16);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "ID:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 111);
+            this.label4.Location = new System.Drawing.Point(12, 58);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 13;
             this.label4.Text = "Nome:";
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(78, 65);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(221, 20);
-            this.txtID.TabIndex = 14;
-            // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(78, 110);
+            this.txtNome.Location = new System.Drawing.Point(78, 57);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(221, 20);
             this.txtNome.TabIndex = 15;
             // 
-            // btnBuscaId
-            // 
-            this.btnBuscaId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscaId.Location = new System.Drawing.Point(318, 65);
-            this.btnBuscaId.Name = "btnBuscaId";
-            this.btnBuscaId.Size = new System.Drawing.Size(170, 20);
-            this.btnBuscaId.TabIndex = 16;
-            this.btnBuscaId.Text = "Buscar";
-            this.btnBuscaId.UseVisualStyleBackColor = true;
-            this.btnBuscaId.Click += new System.EventHandler(this.btnBuscaId_Click);
-            // 
             // btnBuscaNome
             // 
             this.btnBuscaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscaNome.Location = new System.Drawing.Point(318, 110);
+            this.btnBuscaNome.Location = new System.Drawing.Point(318, 57);
             this.btnBuscaNome.Name = "btnBuscaNome";
             this.btnBuscaNome.Size = new System.Drawing.Size(170, 20);
             this.btnBuscaNome.TabIndex = 17;
@@ -133,20 +103,20 @@
             // pnlResultados
             // 
             this.pnlResultados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnlResultados.Controls.Add(this.txtResultados);
+            this.pnlResultados.Controls.Add(this.dgvResultados);
             this.pnlResultados.Controls.Add(this.label5);
-            this.pnlResultados.Location = new System.Drawing.Point(16, 152);
+            this.pnlResultados.Location = new System.Drawing.Point(17, 100);
             this.pnlResultados.Name = "pnlResultados";
             this.pnlResultados.Size = new System.Drawing.Size(472, 161);
             this.pnlResultados.TabIndex = 18;
             // 
-            // txtResultados
+            // dgvResultados
             // 
-            this.txtResultados.Location = new System.Drawing.Point(17, 30);
-            this.txtResultados.Multiline = true;
-            this.txtResultados.Name = "txtResultados";
-            this.txtResultados.Size = new System.Drawing.Size(437, 111);
-            this.txtResultados.TabIndex = 20;
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Location = new System.Drawing.Point(3, 16);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.Size = new System.Drawing.Size(466, 142);
+            this.dgvResultados.TabIndex = 20;
             // 
             // label5
             // 
@@ -161,7 +131,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(15, 333);
+            this.btnCancelar.Location = new System.Drawing.Point(15, 285);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 30);
             this.btnCancelar.TabIndex = 52;
@@ -172,7 +142,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(195, 333);
+            this.btnLimpar.Location = new System.Drawing.Point(195, 285);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(121, 30);
             this.btnLimpar.TabIndex = 51;
@@ -183,7 +153,7 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(367, 333);
+            this.btnSair.Location = new System.Drawing.Point(367, 285);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(121, 30);
             this.btnSair.TabIndex = 50;
@@ -195,17 +165,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 380);
+            this.ClientSize = new System.Drawing.Size(501, 340);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.pnlResultados);
             this.Controls.Add(this.btnBuscaNome);
-            this.Controls.Add(this.btnBuscaId);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -213,6 +180,7 @@
             this.Text = "Buscar Agrotóxicos";
             this.pnlResultados.ResumeLayout(false);
             this.pnlResultados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,17 +191,14 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Button btnBuscaId;
         private System.Windows.Forms.Button btnBuscaNome;
         private System.Windows.Forms.Panel pnlResultados;
-        private System.Windows.Forms.TextBox txtResultados;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.DataGridView dgvResultados;
     }
 }
