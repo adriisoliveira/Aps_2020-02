@@ -98,25 +98,24 @@ select * from Proprietario
 
 
 /*INSERÇÃO NÃO FEITA AINDA. ESTÁ INCOMPLETA
-
-INSERT INTO `propriedade` (`cnpj`, `nome`, `endereço`)
-VALUES (`cnpj`, `nome`, `endereço`),
-(`45758524589650`, `nome`, `travessa osvaldo cruz, 37`),
-(`45758524589651`, `nome`, `rua pedro dias de amaral, 52`),
-(`45758524589652`, `nome`, `estrada da sé, 21`),
-(`45758524589653`, `nome`, `rua maranhão dias, 33`),
-(`45758524589654`, `nome`, `avenida paulo freire camões, 12`),
-(`45758524589655`, `nome`, `rua das nuvens, 27`),
-(`45758524589656`, `nome`, `rua fernão diaz, 32`),
-(`45758524589657`, `nome`, `travessa pedro diniz, 29`),
-(`45758524589658`, `nome`, `estrada da serra florida, 20`),
-(`45758524589659`, `nome`, `rua freira amada, 31`),
-(`45758524589661`, `nome`, `rua presidente eleutério, 29`),
-(`45758524589662`, `nome`, `rua dos pássaros azuis, 10`),
-(`45758524589663`, `nome`, `avenida joão batista domingues, 107`),
-(`45758524589664`, `nome`, `avenida casa blanca, 1962`),
-(`45758524589665`, `nome`, `avenida casa blanca, 1992`),
-(`45758524589660`, `nome`, `travessa paulino arnaldo adolfo, 50`),
-(`45758524589667`, `nome`, `avenida do estado, 1902`),
-(`45758524589668`, `nome`, `avenida paulista, 1562`),
-(`45758524589669`, `nome`, `avenida garoto, 55`);*/
+cnpj,nome, endereço, id cidade, tamanho, produção, id proprietario*/
+INSERT INTO Propriedade VALUES
+/*('45758524589650', 'nome', 'Travessa osvaldo cruz, 37',25,'1000 Hectares','Tomate',3),*/
+('45758524589651', 'nome', 'Rua pedro dias de amaral, 52',2,'5930 Hectares','Banana',4),
+('45758524589652', 'nome', 'Estrada da sé, 21',6,'1578 Hectares','Melancia',5),
+('45758524589653', 'nome', 'Rua maranhão dias, 33',14,'672 Hectares','Algodão',6),
+('45758524589654', 'nome', 'Avenida paulo freire camões, 12',23,'476 Hectares','Milho',7),
+('45758524589655', 'nome', 'Rua das nuvens, 27',9,'755 Hectares','Trigo',8),
+('45758524589656', 'nome', 'Rua fernão diaz, 32',11,'582 Hectares','Milho',9),
+('45758524589657', 'nome', 'Travessa pedro diniz, 29',24,'3556 Hectares','Seringueiras',10),
+('45758524589658', 'nome', 'Estrada da serra florida, 20',10,'782 Hectares','Cenoura',11),
+('45758524589659', 'nome', 'Rua freira amada, 31',15,'1600 Hectares','Abacaxi',12),
+('45758524589661', 'nome', 'Rua presidente eleutério, 29',5,'1500 Hectares','Cana',16),
+('45758524589662', 'nome', 'Rua dos pássaros azuis, 10',13,'1239 Hectares','Melão',17),
+('45758524589663', 'nome', 'Avenida joão batista domingues, 107',22,'129 Hectares','Alface',18),
+('45758524589664', 'nome', 'Avenida casa blanca, 1962',24,'203 Hectares','Flores',19),
+('45758524589665', 'nome', 'Avenida casa blanca, 1992',24,'932 Hectares','Melancia',20),
+('45758524589660', 'nome', 'Travessa Paulino Arnaldo Adolfo, 50',1,'500 Hectares','Batata',21),
+('45758524589667', 'nome', 'Avenida do Estado, 1902',27,'14000 Hectares','Eucalipto',22),
+('45758524589668', 'nome', 'Avenida Paulista, 1562',17,'1400 Hectares','Cana',13),
+('45758524589669', 'nome', 'Estrada Garoto, 55',20,'3200 Hectares','Algodão',14);
