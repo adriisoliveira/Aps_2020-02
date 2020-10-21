@@ -38,14 +38,16 @@
             this.btnCadastarUsuarios = new System.Windows.Forms.Button();
             this.btnCadastrarAgrotoxico = new System.Windows.Forms.Button();
             this.btnBuscarPropriedade = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(396, 227);
+            this.btnSair.Location = new System.Drawing.Point(528, 279);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(169, 33);
+            this.btnSair.Size = new System.Drawing.Size(225, 41);
             this.btnSair.TabIndex = 19;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -54,18 +56,20 @@
             // txtUsuario
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtUsuario.Location = new System.Drawing.Point(455, 29);
+            this.txtUsuario.Location = new System.Drawing.Point(607, 36);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(132, 22);
             this.txtUsuario.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(390, 32);
+            this.label2.Location = new System.Drawing.Point(520, 39);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 16);
+            this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 17;
             this.label2.Text = "Usuário:";
             // 
@@ -73,18 +77,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Location = new System.Drawing.Point(16, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 25);
+            this.label1.Size = new System.Drawing.Size(361, 31);
             this.label1.TabIndex = 16;
             this.label1.Text = "Selecione a opção desejada:";
             // 
             // btnCadastrarPropriedade
             // 
             this.btnCadastrarPropriedade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarPropriedade.Location = new System.Drawing.Point(17, 158);
+            this.btnCadastrarPropriedade.Location = new System.Drawing.Point(23, 194);
+            this.btnCadastrarPropriedade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrarPropriedade.Name = "btnCadastrarPropriedade";
-            this.btnCadastrarPropriedade.Size = new System.Drawing.Size(169, 48);
+            this.btnCadastrarPropriedade.Size = new System.Drawing.Size(225, 59);
             this.btnCadastrarPropriedade.TabIndex = 15;
             this.btnCadastrarPropriedade.Text = "Cadastar Propriedade";
             this.btnCadastrarPropriedade.UseVisualStyleBackColor = true;
@@ -93,9 +99,10 @@
             // btnBuscarAgrotoxico
             // 
             this.btnBuscarAgrotoxico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarAgrotoxico.Location = new System.Drawing.Point(206, 85);
+            this.btnBuscarAgrotoxico.Location = new System.Drawing.Point(275, 105);
+            this.btnBuscarAgrotoxico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscarAgrotoxico.Name = "btnBuscarAgrotoxico";
-            this.btnBuscarAgrotoxico.Size = new System.Drawing.Size(169, 48);
+            this.btnBuscarAgrotoxico.Size = new System.Drawing.Size(225, 59);
             this.btnBuscarAgrotoxico.TabIndex = 14;
             this.btnBuscarAgrotoxico.Text = "Buscar Agrotoxico";
             this.btnBuscarAgrotoxico.UseVisualStyleBackColor = true;
@@ -104,9 +111,10 @@
             // btnConsultarUsuarios
             // 
             this.btnConsultarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarUsuarios.Location = new System.Drawing.Point(393, 85);
+            this.btnConsultarUsuarios.Location = new System.Drawing.Point(524, 105);
+            this.btnConsultarUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConsultarUsuarios.Name = "btnConsultarUsuarios";
-            this.btnConsultarUsuarios.Size = new System.Drawing.Size(169, 48);
+            this.btnConsultarUsuarios.Size = new System.Drawing.Size(225, 59);
             this.btnConsultarUsuarios.TabIndex = 13;
             this.btnConsultarUsuarios.Text = "Consultar Usuários";
             this.btnConsultarUsuarios.UseVisualStyleBackColor = true;
@@ -115,9 +123,10 @@
             // btnCadastarUsuarios
             // 
             this.btnCadastarUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastarUsuarios.Location = new System.Drawing.Point(393, 158);
+            this.btnCadastarUsuarios.Location = new System.Drawing.Point(524, 194);
+            this.btnCadastarUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastarUsuarios.Name = "btnCadastarUsuarios";
-            this.btnCadastarUsuarios.Size = new System.Drawing.Size(169, 48);
+            this.btnCadastarUsuarios.Size = new System.Drawing.Size(225, 59);
             this.btnCadastarUsuarios.TabIndex = 12;
             this.btnCadastarUsuarios.Text = "Cadastrar Usuários";
             this.btnCadastarUsuarios.UseVisualStyleBackColor = true;
@@ -126,9 +135,10 @@
             // btnCadastrarAgrotoxico
             // 
             this.btnCadastrarAgrotoxico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarAgrotoxico.Location = new System.Drawing.Point(206, 158);
+            this.btnCadastrarAgrotoxico.Location = new System.Drawing.Point(275, 194);
+            this.btnCadastrarAgrotoxico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrarAgrotoxico.Name = "btnCadastrarAgrotoxico";
-            this.btnCadastrarAgrotoxico.Size = new System.Drawing.Size(169, 48);
+            this.btnCadastrarAgrotoxico.Size = new System.Drawing.Size(225, 59);
             this.btnCadastrarAgrotoxico.TabIndex = 11;
             this.btnCadastrarAgrotoxico.Text = "Cadastrar Agrotoxico";
             this.btnCadastrarAgrotoxico.UseVisualStyleBackColor = true;
@@ -137,19 +147,32 @@
             // btnBuscarPropriedade
             // 
             this.btnBuscarPropriedade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarPropriedade.Location = new System.Drawing.Point(17, 85);
+            this.btnBuscarPropriedade.Location = new System.Drawing.Point(23, 105);
+            this.btnBuscarPropriedade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscarPropriedade.Name = "btnBuscarPropriedade";
-            this.btnBuscarPropriedade.Size = new System.Drawing.Size(169, 48);
+            this.btnBuscarPropriedade.Size = new System.Drawing.Size(225, 59);
             this.btnBuscarPropriedade.TabIndex = 10;
             this.btnBuscarPropriedade.Text = "Buscar Propriedade";
             this.btnBuscarPropriedade.UseVisualStyleBackColor = true;
             this.btnBuscarPropriedade.Click += new System.EventHandler(this.btnBuscarPropriedade_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(23, 279);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(225, 41);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "SAIR";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // TelaInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 280);
+            this.ClientSize = new System.Drawing.Size(772, 345);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
@@ -160,6 +183,7 @@
             this.Controls.Add(this.btnCadastarUsuarios);
             this.Controls.Add(this.btnCadastrarAgrotoxico);
             this.Controls.Add(this.btnBuscarPropriedade);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaInicio";
             this.Text = "TelaInicio";
             this.Load += new System.EventHandler(this.TelaInicio_Load);
@@ -180,5 +204,6 @@
         private System.Windows.Forms.Button btnCadastarUsuarios;
         private System.Windows.Forms.Button btnCadastrarAgrotoxico;
         private System.Windows.Forms.Button btnBuscarPropriedade;
+        private System.Windows.Forms.Button button1;
     }
 }
