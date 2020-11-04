@@ -23,10 +23,11 @@ namespace ProjetoProcessamentoImagens
 
         private void CadastrarPropriedade_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet2.Cidade'. Você pode movê-la ou removê-la conforme necessário.
-            this.cidadeTableAdapter.Fill(this.ministerio_MeioAmbienteDataSet2.Cidade);
-            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet1.Estado'. Você pode movê-la ou removê-la conforme necessário.
-            this.estadoTableAdapter.Fill(this.ministerio_MeioAmbienteDataSet1.Estado);
+            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet7.Estado'. Você pode movê-la ou removê-la conforme necessário.
+            this.estadoTableAdapter1.Fill(this.ministerio_MeioAmbienteDataSet7.Estado);
+            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet6.Cidade'. Você pode movê-la ou removê-la conforme necessário.
+            this.cidadeTableAdapter1.Fill(this.ministerio_MeioAmbienteDataSet6.Cidade);
+
             txtNome.Focus();
             txtUsuario.Text = Global.UsuarioLogado;
         }
@@ -76,8 +77,10 @@ namespace ProjetoProcessamentoImagens
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conexao.Conectar();
                 string nomeCidade = lbxCidade.Text;
-                cmd.CommandText = ("SELECT Nome_Cidade FROM Cidade WHERE Nome_Cidade=@nomeCidade");
+                string ufEstado = lblEstado.Text;
+                cmd.CommandText = ("SELECT Nome_Cidade,UF_Estado FROM Cidade WHERE Nome_Cidade=@nomeCidade, UF_Estado=@ufEstado");
                 cmd.Parameters.AddWithValue("@nomeCidade", nomeCidade);
+                cmd.Parameters.AddWithValue("@ufEstado", ufEstado);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
@@ -89,7 +92,16 @@ namespace ProjetoProcessamentoImagens
                     MessageBox.Show("CIDADE INEXISTENTE!");
                 }
                 reader.Close();
-
+                if (reader.Read())
+                {
+                    nomeCidade = reader["UF_Estado"].ToString();
+                    lblEstado.Text = ufEstado;
+                }
+                else
+                {
+                    MessageBox.Show("ESTADO INEXISTENTE!");
+                }
+                reader.Close();
 
 
                 cmd.CommandText = ("INSERT INTO Propriedade (CNPJ_Propriedade,Nome,Endereco,ID_Cidade,Tamanho,Producao,ID_Proprietario) VALUES ('" +txtCnpj.Text + "', '" + txtNome.Text + "', '" + txtEndereco.Text + "', +'" + lbxCidade.Text + "', '" + txtTamanho.Text + "', '" + txtTipoProducao.Text + "','"+txtProprietario.Text+"'");
