@@ -69,5 +69,10 @@ namespace ProjetoProcessamentoImagens
                 MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!", ex.Message);
             }
         }
+
+        private void CadastrarUsuarios_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Global.UsuarioLogado;
+        }
     }
 }

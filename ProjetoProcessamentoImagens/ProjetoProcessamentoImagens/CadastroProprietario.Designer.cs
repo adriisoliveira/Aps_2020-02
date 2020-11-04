@@ -239,6 +239,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CadastroProprietario";
             this.Text = "CadastroProprietario";
+            this.Load += new System.EventHandler(this.CadastroProprietario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

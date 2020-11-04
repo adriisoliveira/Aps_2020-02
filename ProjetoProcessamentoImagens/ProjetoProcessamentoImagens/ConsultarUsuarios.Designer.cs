@@ -44,9 +44,14 @@
             this.ministerio_MeioAmbienteDataSet = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet();
             this.usuarioTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSetTableAdapters.UsuarioTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
+            this.ministerio_MeioAmbienteDataSet5 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet5();
+            this.usuarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.usuarioTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet5TableAdapters.UsuarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -91,7 +96,7 @@
             this.tipoAcessoDataGridViewTextBoxColumn,
             this.usuarioLoginDataGridViewTextBoxColumn,
             this.senhaDataGridViewTextBoxColumn});
-            this.dgvUsuarios.DataSource = this.usuarioBindingSource;
+            this.dgvUsuarios.DataSource = this.usuarioBindingSource1;
             this.dgvUsuarios.Location = new System.Drawing.Point(16, 37);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.Size = new System.Drawing.Size(736, 220);
@@ -164,6 +169,20 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Usuários Cadastrados no sistema:";
             // 
+            // ministerio_MeioAmbienteDataSet5
+            // 
+            this.ministerio_MeioAmbienteDataSet5.DataSetName = "Ministerio_MeioAmbienteDataSet5";
+            this.ministerio_MeioAmbienteDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usuarioBindingSource1
+            // 
+            this.usuarioBindingSource1.DataMember = "Usuario";
+            this.usuarioBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet5;
+            // 
+            // usuarioTableAdapter1
+            // 
+            this.usuarioTableAdapter1.ClearBeforeFill = true;
+            // 
             // ConsultarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +199,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +223,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioLoginDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn senhaDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
+        private Ministerio_MeioAmbienteDataSet5 ministerio_MeioAmbienteDataSet5;
+        private System.Windows.Forms.BindingSource usuarioBindingSource1;
+        private Ministerio_MeioAmbienteDataSet5TableAdapters.UsuarioTableAdapter usuarioTableAdapter1;
     }
 }

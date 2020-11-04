@@ -19,7 +19,8 @@ namespace ProjetoProcessamentoImagens
 
         private void TelaInicio_Load(object sender, EventArgs e)
         {
-
+            txtUsuario.Text = Global.UsuarioLogado;
+               
         }
 
         private void btnBuscarPropriedade_Click(object sender, EventArgs e)

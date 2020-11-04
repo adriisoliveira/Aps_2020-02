@@ -178,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BuscarAgrotoxicos";
             this.Text = "Buscar Agrotóxicos";
+            this.Load += new System.EventHandler(this.BuscarAgrotoxicos_Load);
             this.pnlResultados.ResumeLayout(false);
             this.pnlResultados.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();

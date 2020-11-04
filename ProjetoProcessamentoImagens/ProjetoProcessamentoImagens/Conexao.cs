@@ -16,7 +16,7 @@ namespace ProjetoProcessamentoImagens
         public Conexao()
         {
             con = new SqlConnection();
-            con.ConnectionString = "Data Source=LAPTOP-19CP4RFH\\DRIH;Initial Catalog=Ministerio_MeioAmbiente;Integrated Security=True";
+            con.ConnectionString = "Data Source=DESKTOP-2A00OGB;Initial Catalog=Ministerio_MeioAmbiente;Integrated Security=True";
         }
 
         //Método de conexão

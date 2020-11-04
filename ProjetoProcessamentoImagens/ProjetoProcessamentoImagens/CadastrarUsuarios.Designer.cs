@@ -255,6 +255,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CadastrarUsuarios";
             this.Text = "Cadastro de Usuários";
+            this.Load += new System.EventHandler(this.CadastrarUsuarios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

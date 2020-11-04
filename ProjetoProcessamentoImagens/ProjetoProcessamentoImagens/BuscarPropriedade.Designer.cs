@@ -44,10 +44,24 @@
             this.ministerio_MeioAmbienteDataSet3 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3();
             this.propriedadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.propriedadeTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3TableAdapters.PropriedadeTableAdapter();
+            this.ministerio_MeioAmbienteDataSet4 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet4();
+            this.propriedadeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.propriedadeTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet4TableAdapters.PropriedadeTableAdapter();
+            this.iDPropriedadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPJPropriedadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uFEstadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tamanhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.producaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cPFProprietarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -118,7 +132,19 @@
             // dgvResultados
             // 
             this.dgvResultados.AllowUserToOrderColumns = true;
+            this.dgvResultados.AutoGenerateColumns = false;
             this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDPropriedadeDataGridViewTextBoxColumn,
+            this.cNPJPropriedadeDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.enderecoDataGridViewTextBoxColumn,
+            this.nomeCidadeDataGridViewTextBoxColumn,
+            this.uFEstadoDataGridViewTextBoxColumn,
+            this.tamanhoDataGridViewTextBoxColumn,
+            this.producaoDataGridViewTextBoxColumn,
+            this.cPFProprietarioDataGridViewTextBoxColumn});
+            this.dgvResultados.DataSource = this.propriedadeBindingSource1;
             this.dgvResultados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvResultados.Location = new System.Drawing.Point(0, 0);
             this.dgvResultados.Name = "dgvResultados";
@@ -182,6 +208,75 @@
             // 
             this.propriedadeTableAdapter.ClearBeforeFill = true;
             // 
+            // ministerio_MeioAmbienteDataSet4
+            // 
+            this.ministerio_MeioAmbienteDataSet4.DataSetName = "Ministerio_MeioAmbienteDataSet4";
+            this.ministerio_MeioAmbienteDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // propriedadeBindingSource1
+            // 
+            this.propriedadeBindingSource1.DataMember = "Propriedade";
+            this.propriedadeBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet4;
+            // 
+            // propriedadeTableAdapter1
+            // 
+            this.propriedadeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // iDPropriedadeDataGridViewTextBoxColumn
+            // 
+            this.iDPropriedadeDataGridViewTextBoxColumn.DataPropertyName = "ID_Propriedade";
+            this.iDPropriedadeDataGridViewTextBoxColumn.HeaderText = "ID_Propriedade";
+            this.iDPropriedadeDataGridViewTextBoxColumn.Name = "iDPropriedadeDataGridViewTextBoxColumn";
+            this.iDPropriedadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cNPJPropriedadeDataGridViewTextBoxColumn
+            // 
+            this.cNPJPropriedadeDataGridViewTextBoxColumn.DataPropertyName = "CNPJ_Propriedade";
+            this.cNPJPropriedadeDataGridViewTextBoxColumn.HeaderText = "CNPJ_Propriedade";
+            this.cNPJPropriedadeDataGridViewTextBoxColumn.Name = "cNPJPropriedadeDataGridViewTextBoxColumn";
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // enderecoDataGridViewTextBoxColumn
+            // 
+            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
+            // 
+            // nomeCidadeDataGridViewTextBoxColumn
+            // 
+            this.nomeCidadeDataGridViewTextBoxColumn.DataPropertyName = "Nome_Cidade";
+            this.nomeCidadeDataGridViewTextBoxColumn.HeaderText = "Nome_Cidade";
+            this.nomeCidadeDataGridViewTextBoxColumn.Name = "nomeCidadeDataGridViewTextBoxColumn";
+            // 
+            // uFEstadoDataGridViewTextBoxColumn
+            // 
+            this.uFEstadoDataGridViewTextBoxColumn.DataPropertyName = "UF_Estado";
+            this.uFEstadoDataGridViewTextBoxColumn.HeaderText = "UF_Estado";
+            this.uFEstadoDataGridViewTextBoxColumn.Name = "uFEstadoDataGridViewTextBoxColumn";
+            // 
+            // tamanhoDataGridViewTextBoxColumn
+            // 
+            this.tamanhoDataGridViewTextBoxColumn.DataPropertyName = "Tamanho";
+            this.tamanhoDataGridViewTextBoxColumn.HeaderText = "Tamanho";
+            this.tamanhoDataGridViewTextBoxColumn.Name = "tamanhoDataGridViewTextBoxColumn";
+            // 
+            // producaoDataGridViewTextBoxColumn
+            // 
+            this.producaoDataGridViewTextBoxColumn.DataPropertyName = "Producao";
+            this.producaoDataGridViewTextBoxColumn.HeaderText = "Producao";
+            this.producaoDataGridViewTextBoxColumn.Name = "producaoDataGridViewTextBoxColumn";
+            // 
+            // cPFProprietarioDataGridViewTextBoxColumn
+            // 
+            this.cPFProprietarioDataGridViewTextBoxColumn.DataPropertyName = "CPF_Proprietario";
+            this.cPFProprietarioDataGridViewTextBoxColumn.HeaderText = "CPF_Proprietario";
+            this.cPFProprietarioDataGridViewTextBoxColumn.Name = "cPFProprietarioDataGridViewTextBoxColumn";
+            // 
             // rtbResultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +300,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +324,17 @@
         private Ministerio_MeioAmbienteDataSet3 ministerio_MeioAmbienteDataSet3;
         private System.Windows.Forms.BindingSource propriedadeBindingSource;
         private Ministerio_MeioAmbienteDataSet3TableAdapters.PropriedadeTableAdapter propriedadeTableAdapter;
+        private Ministerio_MeioAmbienteDataSet4 ministerio_MeioAmbienteDataSet4;
+        private System.Windows.Forms.BindingSource propriedadeBindingSource1;
+        private Ministerio_MeioAmbienteDataSet4TableAdapters.PropriedadeTableAdapter propriedadeTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDPropriedadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPJPropriedadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uFEstadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tamanhoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn producaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cPFProprietarioDataGridViewTextBoxColumn;
     }
 }

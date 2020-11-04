@@ -71,5 +71,10 @@ namespace ProjetoProcessamentoImagens
         {
             string proprietario = txtCpf.Text;
         }
+
+        private void BuscarProprietario_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Global.UsuarioLogado;
+        }
     }
 }

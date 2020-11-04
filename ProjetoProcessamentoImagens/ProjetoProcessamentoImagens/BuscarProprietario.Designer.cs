@@ -144,6 +144,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BuscarProprietario";
             this.Text = "Buscar Proprietario";
+            this.Load += new System.EventHandler(this.BuscarProprietario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

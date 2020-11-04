@@ -53,6 +53,9 @@ namespace ProjetoProcessamentoImagens
                 {
                     usuario = reader["UsuarioLogin"].ToString();
                     senha = reader["Senha"].ToString();
+
+                    Global.UsuarioLogado = txtUsuario.Text;
+
                     TelaInicio telaInicio = new TelaInicio();
                     telaInicio.Show();
                     this.Hide();

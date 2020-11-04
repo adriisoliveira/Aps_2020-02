@@ -80,5 +80,9 @@ namespace ProjetoProcessamentoImagens
             Application.Exit();
         }
 
+        private void BuscarAgrotoxicos_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Global.UsuarioLogado;
+        }
     }
 }

@@ -28,6 +28,7 @@ namespace ProjetoProcessamentoImagens
             // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet1.Estado'. Você pode movê-la ou removê-la conforme necessário.
             this.estadoTableAdapter.Fill(this.ministerio_MeioAmbienteDataSet1.Estado);
             txtNome.Focus();
+            txtUsuario.Text = Global.UsuarioLogado;
         }
 
         private void btnBuscarProprietario_Click(object sender, EventArgs e)
@@ -75,7 +76,7 @@ namespace ProjetoProcessamentoImagens
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conexao.Conectar();
                 string nomeCidade = lbxCidade.Text;
-                cmd.CommandText = ("SELECT ID_Cidade FROM Cidade WHERE Nome_Cidade=@nomeCidade");
+                cmd.CommandText = ("SELECT Nome_Cidade FROM Cidade WHERE Nome_Cidade=@nomeCidade");
                 cmd.Parameters.AddWithValue("@nomeCidade", nomeCidade);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())

@@ -61,5 +61,9 @@ namespace ProjetoProcessamentoImagens
             }
         }
 
+        private void CadastroProprietario_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Global.UsuarioLogado;
+        }
     }
 }
