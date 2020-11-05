@@ -37,7 +37,7 @@
             this.txtAgrotoxico = new System.Windows.Forms.TextBox();
             this.btnBuscar1 = new System.Windows.Forms.Button();
             this.btnBuscar2 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbInfo = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.calendario1 = new System.Windows.Forms.MonthCalendar();
             this.calendario2 = new System.Windows.Forms.MonthCalendar();
@@ -132,13 +132,13 @@
             this.btnBuscar2.UseVisualStyleBackColor = true;
             this.btnBuscar2.Click += new System.EventHandler(this.btnBuscar2_Click);
             // 
-            // richTextBox1
+            // rtbInfo
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 136);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(521, 113);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "";
+            this.rtbInfo.Location = new System.Drawing.Point(16, 136);
+            this.rtbInfo.Name = "rtbInfo";
+            this.rtbInfo.Size = new System.Drawing.Size(521, 113);
+            this.rtbInfo.TabIndex = 24;
+            this.rtbInfo.Text = "";
             // 
             // label5
             // 
@@ -214,7 +214,7 @@
             this.Controls.Add(this.calendario2);
             this.Controls.Add(this.calendario1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbInfo);
             this.Controls.Add(this.btnBuscar2);
             this.Controls.Add(this.btnBuscar1);
             this.Controls.Add(this.txtAgrotoxico);
@@ -243,7 +243,7 @@
         private System.Windows.Forms.TextBox txtAgrotoxico;
         private System.Windows.Forms.Button btnBuscar1;
         private System.Windows.Forms.Button btnBuscar2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbInfo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MonthCalendar calendario1;
         private System.Windows.Forms.MonthCalendar calendario2;
