@@ -90,9 +90,6 @@ namespace ProjetoProcessamentoImagens
 
         private void rtbResultados_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet4.Propriedade'. Você pode movê-la ou removê-la conforme necessário.
-            this.propriedadeTableAdapter1.Fill(this.ministerio_MeioAmbienteDataSet4.Propriedade);
-            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet3.Propriedade'. Você pode movê-la ou removê-la conforme necessário.
             txtUsuario.Text = Global.UsuarioLogado;
         }
     }

@@ -39,8 +39,8 @@
             this.btnBuscar2 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.calendario1 = new System.Windows.Forms.MonthCalendar();
+            this.calendario2 = new System.Windows.Forms.MonthCalendar();
             this.label6 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -149,17 +149,17 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "Inicio do uso:";
             // 
-            // monthCalendar1
+            // calendario1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(16, 292);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 26;
+            this.calendario1.Location = new System.Drawing.Point(16, 292);
+            this.calendario1.Name = "calendario1";
+            this.calendario1.TabIndex = 26;
             // 
-            // monthCalendar2
+            // calendario2
             // 
-            this.monthCalendar2.Location = new System.Drawing.Point(310, 292);
-            this.monthCalendar2.Name = "monthCalendar2";
-            this.monthCalendar2.TabIndex = 27;
+            this.calendario2.Location = new System.Drawing.Point(310, 292);
+            this.calendario2.Name = "calendario2";
+            this.calendario2.TabIndex = 27;
             // 
             // label6
             // 
@@ -210,8 +210,8 @@
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.monthCalendar2);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.calendario2);
+            this.Controls.Add(this.calendario1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnBuscar2);
@@ -244,8 +244,8 @@
         private System.Windows.Forms.Button btnBuscar2;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.MonthCalendar calendario1;
+        private System.Windows.Forms.MonthCalendar calendario2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnLimpar;
