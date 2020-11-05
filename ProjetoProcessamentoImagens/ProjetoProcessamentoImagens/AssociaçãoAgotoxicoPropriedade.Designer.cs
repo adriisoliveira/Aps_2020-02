@@ -103,6 +103,7 @@
             this.btnCarregar.TabIndex = 18;
             this.btnCarregar.Text = "Carregar";
             this.btnCarregar.UseVisualStyleBackColor = true;
+            this.btnCarregar.Click += new System.EventHandler(this.btnCarregar_Click);
             // 
             // btnVoltar
             // 
@@ -134,6 +135,7 @@
             this.btnCadastrarNova.TabIndex = 50;
             this.btnCadastrarNova.Text = "Cadastrar Nova";
             this.btnCadastrarNova.UseVisualStyleBackColor = true;
+            this.btnCadastrarNova.Click += new System.EventHandler(this.btnCadastrarNova_Click);
             // 
             // AssociaçãoAgotoxicoPropriedade
             // 
