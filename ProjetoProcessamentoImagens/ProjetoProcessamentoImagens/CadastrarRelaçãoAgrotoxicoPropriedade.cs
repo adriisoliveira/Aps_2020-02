@@ -21,5 +21,32 @@ namespace ProjetoProcessamentoImagens
         {
             txtUsuario.Text = Global.UsuarioLogado;
         }
+
+        private void btnBuscar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            TelaInicio telaInicio = new TelaInicio();
+            telaInicio.Show();
+            this.Hide();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

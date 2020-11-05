@@ -16,9 +16,10 @@ namespace ProjetoProcessamentoImagens
         Conexao conexao = new Conexao();
         //Classe para poder escrever em sql 
         SqlCommand cmd = new SqlCommand();
-        public CadastrarPropriedade()
+        public CadastrarPropriedade(string cpf = "")
         {
             InitializeComponent();
+            txtProprietario.Text = cpf;
         }
 
         private void CadastrarPropriedade_Load(object sender, EventArgs e)

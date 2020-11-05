@@ -26,23 +26,23 @@ namespace ProjetoProcessamentoImagens
                 //MessageBox.Show(cbxCarregar.SelectedValue.ToString());
                 SqlCommand cmd = new SqlCommand();
                 string cpf = txtCpf.Text;
-                string id = "";
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = ("select ID_Proprietario,CPF_Proprietario from Propriedade WHERE CPF_Proprietario=@cpf");
+                cmd.CommandText = ("select CPF_Proprietario from Proprietario WHERE CPF_Proprietario=@cpf");
                 //O campo SelectedValue se refere ao que eu selecionar na ComboBox
+                cmd.Parameters.AddWithValue("@cpf", cpf);
                 cmd.CommandType = CommandType.Text;
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     cpf = reader["CPF_Proprietario"].ToString();
-                    id = reader["ID_Proprietario"].ToString();
-                    txtCpf.Text = id;
+                    txtCpf.Text = cpf;
+                    MessageBox.Show("CPF ENCONTRADO, CLIQUE EM SELECIONAR!");
                 }
                 else
                 {
-                    MessageBox.Show("CNPF INEXISTENTE!");
+                    MessageBox.Show("CPF INEXISTENTE!");
                 }
-
+                reader.Close();
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
 
@@ -69,7 +69,10 @@ namespace ProjetoProcessamentoImagens
 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-            string proprietario = txtCpf.Text;
+            this.Hide();
+            CadastrarPropriedade cadastrarPropriedade = new CadastrarPropriedade(txtCpf.Text);
+            cadastrarPropriedade.Show();
+            
         }
 
         private void BuscarProprietario_Load(object sender, EventArgs e)

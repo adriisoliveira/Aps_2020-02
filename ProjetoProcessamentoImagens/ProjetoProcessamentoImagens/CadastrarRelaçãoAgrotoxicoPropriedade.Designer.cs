@@ -37,6 +37,14 @@
             this.txtAgrotoxico = new System.Windows.Forms.TextBox();
             this.btnBuscar1 = new System.Windows.Forms.Button();
             this.btnBuscar2 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -103,27 +111,109 @@
             // 
             // btnBuscar1
             // 
+            this.btnBuscar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar1.Location = new System.Drawing.Point(437, 49);
             this.btnBuscar1.Name = "btnBuscar1";
             this.btnBuscar1.Size = new System.Drawing.Size(100, 23);
             this.btnBuscar1.TabIndex = 22;
             this.btnBuscar1.Text = "Buscar";
             this.btnBuscar1.UseVisualStyleBackColor = true;
+            this.btnBuscar1.Click += new System.EventHandler(this.btnBuscar1_Click);
             // 
             // btnBuscar2
             // 
+            this.btnBuscar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar2.Location = new System.Drawing.Point(437, 90);
             this.btnBuscar2.Name = "btnBuscar2";
             this.btnBuscar2.Size = new System.Drawing.Size(100, 23);
             this.btnBuscar2.TabIndex = 23;
             this.btnBuscar2.Text = "Buscar";
             this.btnBuscar2.UseVisualStyleBackColor = true;
+            this.btnBuscar2.Click += new System.EventHandler(this.btnBuscar2_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(16, 136);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(521, 113);
+            this.richTextBox1.TabIndex = 24;
+            this.richTextBox1.Text = "";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(73, 263);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 20);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Inicio do uso:";
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(16, 292);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 26;
+            // 
+            // monthCalendar2
+            // 
+            this.monthCalendar2.Location = new System.Drawing.Point(310, 292);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.TabIndex = 27;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(372, 263);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 20);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Fim do uso:";
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(366, 481);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(145, 37);
+            this.btnCadastrar.TabIndex = 29;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(192, 481);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(145, 37);
+            this.btnLimpar.TabIndex = 30;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(16, 481);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(145, 37);
+            this.btnCancelar.TabIndex = 31;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // CadastrarRelaçãoAgrotoxicoPropriedade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 450);
+            this.ClientSize = new System.Drawing.Size(550, 542);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.monthCalendar2);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnBuscar2);
             this.Controls.Add(this.btnBuscar1);
             this.Controls.Add(this.txtAgrotoxico);
@@ -152,5 +242,13 @@
         private System.Windows.Forms.TextBox txtAgrotoxico;
         private System.Windows.Forms.Button btnBuscar1;
         private System.Windows.Forms.Button btnBuscar2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
