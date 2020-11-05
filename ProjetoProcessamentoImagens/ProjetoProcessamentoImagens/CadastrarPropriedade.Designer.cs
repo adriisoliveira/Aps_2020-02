@@ -47,6 +47,8 @@
             this.estadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ministerio_MeioAmbienteDataSet1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet1();
             this.lbxCidade = new System.Windows.Forms.ListBox();
+            this.cidadeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ministerio_MeioAmbienteDataSet6 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet6();
             this.cidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ministerio_MeioAmbienteDataSet2 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet2();
             this.label10 = new System.Windows.Forms.Label();
@@ -58,22 +60,20 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.estadoTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet1TableAdapters.EstadoTableAdapter();
             this.cidadeTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet2TableAdapters.CidadeTableAdapter();
-            this.ministerio_MeioAmbienteDataSet6 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet6();
-            this.cidadeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cidadeTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet6TableAdapters.CidadeTableAdapter();
             this.label9 = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.ListBox();
-            this.ministerio_MeioAmbienteDataSet7 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet7();
             this.estadoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ministerio_MeioAmbienteDataSet7 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet7();
             this.estadoTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet7TableAdapters.EstadoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.estadoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cidadeBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estadoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -81,6 +81,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsuario.Location = new System.Drawing.Point(526, 10);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ReadOnly = true;
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 13;
             // 
@@ -231,6 +232,16 @@
             this.lbxCidade.TabIndex = 39;
             this.lbxCidade.SelectedIndexChanged += new System.EventHandler(this.lbxCidade_SelectedIndexChanged);
             // 
+            // cidadeBindingSource1
+            // 
+            this.cidadeBindingSource1.DataMember = "Cidade";
+            this.cidadeBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet6;
+            // 
+            // ministerio_MeioAmbienteDataSet6
+            // 
+            this.ministerio_MeioAmbienteDataSet6.DataSetName = "Ministerio_MeioAmbienteDataSet6";
+            this.ministerio_MeioAmbienteDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // cidadeBindingSource
             // 
             this.cidadeBindingSource.DataMember = "Cidade";
@@ -316,16 +327,6 @@
             // 
             this.cidadeTableAdapter.ClearBeforeFill = true;
             // 
-            // ministerio_MeioAmbienteDataSet6
-            // 
-            this.ministerio_MeioAmbienteDataSet6.DataSetName = "Ministerio_MeioAmbienteDataSet6";
-            this.ministerio_MeioAmbienteDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cidadeBindingSource1
-            // 
-            this.cidadeBindingSource1.DataMember = "Cidade";
-            this.cidadeBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet6;
-            // 
             // cidadeTableAdapter1
             // 
             this.cidadeTableAdapter1.ClearBeforeFill = true;
@@ -349,15 +350,15 @@
             this.lblEstado.Size = new System.Drawing.Size(55, 17);
             this.lblEstado.TabIndex = 48;
             // 
-            // ministerio_MeioAmbienteDataSet7
-            // 
-            this.ministerio_MeioAmbienteDataSet7.DataSetName = "Ministerio_MeioAmbienteDataSet7";
-            this.ministerio_MeioAmbienteDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // estadoBindingSource1
             // 
             this.estadoBindingSource1.DataMember = "Estado";
             this.estadoBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet7;
+            // 
+            // ministerio_MeioAmbienteDataSet7
+            // 
+            this.ministerio_MeioAmbienteDataSet7.DataSetName = "Ministerio_MeioAmbienteDataSet7";
+            this.ministerio_MeioAmbienteDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // estadoTableAdapter1
             // 
@@ -398,12 +399,12 @@
             this.Load += new System.EventHandler(this.CadastrarPropriedade_Load);
             ((System.ComponentModel.ISupportInitialize)(this.estadoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cidadeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cidadeBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.estadoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

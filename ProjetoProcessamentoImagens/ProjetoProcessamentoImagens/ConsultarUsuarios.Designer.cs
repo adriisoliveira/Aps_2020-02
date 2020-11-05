@@ -40,18 +40,18 @@
             this.tipoAcessoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioLoginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ministerio_MeioAmbienteDataSet5 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet5();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ministerio_MeioAmbienteDataSet = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet();
             this.usuarioTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSetTableAdapters.UsuarioTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
-            this.ministerio_MeioAmbienteDataSet5 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet5();
-            this.usuarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.usuarioTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet5TableAdapters.UsuarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -59,6 +59,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsuario.Location = new System.Drawing.Point(653, 9);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ReadOnly = true;
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 21;
             // 
@@ -145,6 +146,16 @@
             this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
             this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
             // 
+            // usuarioBindingSource1
+            // 
+            this.usuarioBindingSource1.DataMember = "Usuario";
+            this.usuarioBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet5;
+            // 
+            // ministerio_MeioAmbienteDataSet5
+            // 
+            this.ministerio_MeioAmbienteDataSet5.DataSetName = "Ministerio_MeioAmbienteDataSet5";
+            this.ministerio_MeioAmbienteDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // usuarioBindingSource
             // 
             this.usuarioBindingSource.DataMember = "Usuario";
@@ -169,16 +180,6 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Usuários Cadastrados no sistema:";
             // 
-            // ministerio_MeioAmbienteDataSet5
-            // 
-            this.ministerio_MeioAmbienteDataSet5.DataSetName = "Ministerio_MeioAmbienteDataSet5";
-            this.ministerio_MeioAmbienteDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usuarioBindingSource1
-            // 
-            this.usuarioBindingSource1.DataMember = "Usuario";
-            this.usuarioBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet5;
-            // 
             // usuarioTableAdapter1
             // 
             this.usuarioTableAdapter1.ClearBeforeFill = true;
@@ -197,10 +198,10 @@
             this.Text = "ConsultarUsuarios";
             this.Load += new System.EventHandler(this.ConsultarUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -25,7 +25,7 @@ namespace ProjetoProcessamentoImagens
 
         private void btnBuscarPropriedade_Click(object sender, EventArgs e)
         {
-            rtbResultados buscarPropriedade = new rtbResultados();
+            BuscarPropriedade buscarPropriedade = new BuscarPropriedade();
             buscarPropriedade.Show();
             this.Hide();
         }

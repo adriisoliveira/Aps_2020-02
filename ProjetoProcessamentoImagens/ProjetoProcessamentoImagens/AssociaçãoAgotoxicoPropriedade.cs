@@ -16,5 +16,12 @@ namespace ProjetoProcessamentoImagens
         {
             InitializeComponent();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            BuscarPropriedade propriedade = new BuscarPropriedade();
+            propriedade.Show();
+            this.Hide();
+        }
     }
 }

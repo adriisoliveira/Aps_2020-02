@@ -1,6 +1,6 @@
 ﻿namespace ProjetoProcessamentoImagens
 {
-    partial class rtbResultados
+    partial class BuscarPropriedade
     {
         /// <summary>
         /// Required designer variable.
@@ -37,16 +37,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvResultados = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.ministerio_MeioAmbienteDataSet3 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3();
-            this.propriedadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.propriedadeTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3TableAdapters.PropriedadeTableAdapter();
-            this.ministerio_MeioAmbienteDataSet4 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet4();
-            this.propriedadeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.propriedadeTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet4TableAdapters.PropriedadeTableAdapter();
             this.iDPropriedadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNPJPropriedadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,12 +46,23 @@
             this.tamanhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.producaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPFProprietarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propriedadeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ministerio_MeioAmbienteDataSet4 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet4();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.ministerio_MeioAmbienteDataSet3 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3();
+            this.propriedadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.propriedadeTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet3TableAdapters.PropriedadeTableAdapter();
+            this.propriedadeTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet4TableAdapters.PropriedadeTableAdapter();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -69,6 +70,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsuario.Location = new System.Drawing.Point(687, 9);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ReadOnly = true;
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 21;
             // 
@@ -151,77 +153,6 @@
             this.dgvResultados.Size = new System.Drawing.Size(774, 167);
             this.dgvResultados.TabIndex = 27;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(-4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 16);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "RESULTADOS";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(20, 274);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(122, 30);
-            this.btnCancelar.TabIndex = 55;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
-            // 
-            // btnLimpar
-            // 
-            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(360, 274);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(121, 30);
-            this.btnLimpar.TabIndex = 54;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click_1);
-            // 
-            // btnSair
-            // 
-            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(669, 274);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(121, 30);
-            this.btnSair.TabIndex = 53;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
-            // 
-            // ministerio_MeioAmbienteDataSet3
-            // 
-            this.ministerio_MeioAmbienteDataSet3.DataSetName = "Ministerio_MeioAmbienteDataSet3";
-            this.ministerio_MeioAmbienteDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // propriedadeBindingSource
-            // 
-            this.propriedadeBindingSource.DataMember = "Propriedade";
-            this.propriedadeBindingSource.DataSource = this.ministerio_MeioAmbienteDataSet3;
-            // 
-            // propriedadeTableAdapter
-            // 
-            this.propriedadeTableAdapter.ClearBeforeFill = true;
-            // 
-            // ministerio_MeioAmbienteDataSet4
-            // 
-            this.ministerio_MeioAmbienteDataSet4.DataSetName = "Ministerio_MeioAmbienteDataSet4";
-            this.ministerio_MeioAmbienteDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // propriedadeBindingSource1
-            // 
-            this.propriedadeBindingSource1.DataMember = "Propriedade";
-            this.propriedadeBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet4;
-            // 
-            // propriedadeTableAdapter1
-            // 
-            this.propriedadeTableAdapter1.ClearBeforeFill = true;
-            // 
             // iDPropriedadeDataGridViewTextBoxColumn
             // 
             this.iDPropriedadeDataGridViewTextBoxColumn.DataPropertyName = "ID_Propriedade";
@@ -277,11 +208,94 @@
             this.cPFProprietarioDataGridViewTextBoxColumn.HeaderText = "CPF_Proprietario";
             this.cPFProprietarioDataGridViewTextBoxColumn.Name = "cPFProprietarioDataGridViewTextBoxColumn";
             // 
+            // propriedadeBindingSource1
+            // 
+            this.propriedadeBindingSource1.DataMember = "Propriedade";
+            this.propriedadeBindingSource1.DataSource = this.ministerio_MeioAmbienteDataSet4;
+            // 
+            // ministerio_MeioAmbienteDataSet4
+            // 
+            this.ministerio_MeioAmbienteDataSet4.DataSetName = "Ministerio_MeioAmbienteDataSet4";
+            this.ministerio_MeioAmbienteDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(-4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 16);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "RESULTADOS";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(20, 274);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(122, 30);
+            this.btnCancelar.TabIndex = 55;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(509, 274);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(121, 30);
+            this.btnLimpar.TabIndex = 54;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click_1);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(669, 274);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(121, 30);
+            this.btnSair.TabIndex = 53;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
+            // 
+            // ministerio_MeioAmbienteDataSet3
+            // 
+            this.ministerio_MeioAmbienteDataSet3.DataSetName = "Ministerio_MeioAmbienteDataSet3";
+            this.ministerio_MeioAmbienteDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // propriedadeBindingSource
+            // 
+            this.propriedadeBindingSource.DataMember = "Propriedade";
+            this.propriedadeBindingSource.DataSource = this.ministerio_MeioAmbienteDataSet3;
+            // 
+            // propriedadeTableAdapter
+            // 
+            this.propriedadeTableAdapter.ClearBeforeFill = true;
+            // 
+            // propriedadeTableAdapter1
+            // 
+            this.propriedadeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Location = new System.Drawing.Point(174, 274);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(286, 30);
+            this.btnConsultar.TabIndex = 56;
+            this.btnConsultar.Text = "Consutar Agrotoxicos Utilizados";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
             // rtbResultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 324);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSair);
@@ -293,15 +307,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "rtbResultados";
-            this.Text = "BuscarPropriedade";
+            this.Text = "Buscar Propriedade";
             this.Load += new System.EventHandler(this.rtbResultados_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.propriedadeBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +350,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tamanhoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn producaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPFProprietarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnConsultar;
     }
 }

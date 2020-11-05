@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ProjetoProcessamentoImagens
 {
-    public partial class rtbResultados : Form
+    public partial class BuscarPropriedade : Form
     {
-        public rtbResultados()
+        public BuscarPropriedade()
         {
             InitializeComponent();
         }
@@ -91,6 +91,13 @@ namespace ProjetoProcessamentoImagens
         private void rtbResultados_Load(object sender, EventArgs e)
         {
             txtUsuario.Text = Global.UsuarioLogado;
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            AssociaçãoAgotoxicoPropriedade associaçãoAgotoxico = new AssociaçãoAgotoxicoPropriedade();
+            associaçãoAgotoxico.Show();
+            this.Hide();
         }
     }
 }

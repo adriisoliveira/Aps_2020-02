@@ -90,8 +90,8 @@ namespace ProjetoProcessamentoImagens
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            TelaInicio telaInicio = new TelaInicio();
-            telaInicio.Show();
+            BuscarPropriedade propridade = new BuscarPropriedade();
+            propridade.Show();
             this.Hide();
         }
 

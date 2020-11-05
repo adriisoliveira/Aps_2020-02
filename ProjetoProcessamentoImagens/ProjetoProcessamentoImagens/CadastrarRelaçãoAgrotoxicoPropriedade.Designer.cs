@@ -62,6 +62,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsuario.Location = new System.Drawing.Point(437, 9);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ReadOnly = true;
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 16;
             // 
@@ -173,7 +174,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(366, 481);
+            this.btnCadastrar.Location = new System.Drawing.Point(392, 481);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(145, 37);
             this.btnCadastrar.TabIndex = 29;
@@ -183,7 +184,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(192, 481);
+            this.btnLimpar.Location = new System.Drawing.Point(206, 481);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(145, 37);
             this.btnLimpar.TabIndex = 30;

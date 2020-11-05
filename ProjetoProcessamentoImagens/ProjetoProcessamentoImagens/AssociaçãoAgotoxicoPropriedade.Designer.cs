@@ -55,6 +55,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsuario.Location = new System.Drawing.Point(437, 9);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ReadOnly = true;
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 13;
             // 
@@ -112,6 +113,7 @@
             this.btnVoltar.TabIndex = 52;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnLimpar
             // 

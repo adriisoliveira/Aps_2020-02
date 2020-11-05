@@ -47,8 +47,9 @@
             // txtUsuario
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtUsuario.Location = new System.Drawing.Point(388, 20);
+            this.txtUsuario.Location = new System.Drawing.Point(708, 20);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ReadOnly = true;
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 11;
             // 
@@ -56,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(324, 21);
+            this.label2.Location = new System.Drawing.Point(644, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 10;
@@ -92,9 +93,9 @@
             // btnBuscaNome
             // 
             this.btnBuscaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscaNome.Location = new System.Drawing.Point(318, 57);
+            this.btnBuscaNome.Location = new System.Drawing.Point(305, 57);
             this.btnBuscaNome.Name = "btnBuscaNome";
-            this.btnBuscaNome.Size = new System.Drawing.Size(170, 20);
+            this.btnBuscaNome.Size = new System.Drawing.Size(114, 20);
             this.btnBuscaNome.TabIndex = 17;
             this.btnBuscaNome.Text = "Buscar";
             this.btnBuscaNome.UseVisualStyleBackColor = true;
@@ -107,7 +108,7 @@
             this.pnlResultados.Controls.Add(this.label5);
             this.pnlResultados.Location = new System.Drawing.Point(17, 100);
             this.pnlResultados.Name = "pnlResultados";
-            this.pnlResultados.Size = new System.Drawing.Size(472, 161);
+            this.pnlResultados.Size = new System.Drawing.Size(797, 161);
             this.pnlResultados.TabIndex = 18;
             // 
             // dgvResultados
@@ -115,7 +116,7 @@
             this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultados.Location = new System.Drawing.Point(3, 16);
             this.dgvResultados.Name = "dgvResultados";
-            this.dgvResultados.Size = new System.Drawing.Size(466, 142);
+            this.dgvResultados.Size = new System.Drawing.Size(785, 142);
             this.dgvResultados.TabIndex = 20;
             // 
             // label5
@@ -133,7 +134,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(15, 285);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(122, 30);
+            this.btnCancelar.Size = new System.Drawing.Size(253, 30);
             this.btnCancelar.TabIndex = 52;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -142,9 +143,9 @@
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(195, 285);
+            this.btnLimpar.Location = new System.Drawing.Point(291, 285);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(121, 30);
+            this.btnLimpar.Size = new System.Drawing.Size(247, 30);
             this.btnLimpar.TabIndex = 51;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -153,9 +154,9 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(367, 285);
+            this.btnSair.Location = new System.Drawing.Point(560, 285);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(121, 30);
+            this.btnSair.Size = new System.Drawing.Size(254, 30);
             this.btnSair.TabIndex = 50;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -165,12 +166,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 340);
+            this.ClientSize = new System.Drawing.Size(826, 343);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnBuscaNome);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.pnlResultados);
-            this.Controls.Add(this.btnBuscaNome);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtUsuario);
