@@ -1,0 +1,9 @@
+create database BancoImagem
+
+use BancoImagem
+
+CREATE TABLE IMAGEM (
+	ID INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	DESCRICAO NVARCHAR (150),
+	IMAGEM IMAGE
+);
