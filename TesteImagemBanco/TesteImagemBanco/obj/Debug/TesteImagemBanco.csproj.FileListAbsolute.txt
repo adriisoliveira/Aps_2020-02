@@ -8,3 +8,16 @@ C:\Users\Drih\Documents\Faculdade 2020-02\APS\TesteImagemBanco\TesteImagemBanco\
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.csproj.CoreCompileInputs.cache
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.exe
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.pdb
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\bin\Debug\TesteImagemBanco.exe.config
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\bin\Debug\TesteImagemBanco.exe
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\bin\Debug\TesteImagemBanco.pdb
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.csprojAssemblyReference.cache
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.TesteImagem.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.Properties.Resources.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.csproj.GenerateResource.cache
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.csproj.CoreCompileInputs.cache
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.exe
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.pdb
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\bin\Debug\SourceAFIS.dll
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\bin\Debug\SourceAFIS.xml
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\TesteImagemBanco\TesteImagemBanco\obj\Debug\TesteImagemBanco.csproj.CopyComplete

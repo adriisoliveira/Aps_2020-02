@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SourceAFIS.Simple;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,16 @@ namespace TesteImagemBanco
 {
     public partial class TesteImagem : Form
     {
+        int i = 0;
         private long tamanhoArquivoImagem = 0;
         private byte[] vetorImagens;
         private SqlConnection conexaoSQLServer;
         SqlCommand sqlcmd = default(SqlCommand);
-
+        static AfisEngine Afis = new AfisEngine();
         OpenFileDialog openFile = new OpenFileDialog();
+        Fingerprint[] fpBd = new Fingerprint[i];
+        Person[] pessoaBd = new Person[i];
+
 
         private Conexao con;
 
@@ -178,6 +183,46 @@ namespace TesteImagemBanco
             //obtem o codigo da imagem e exibe no controle textbox 
             txtCodigoImagem.Text = (dgvBancoImagens.Rows[e.RowIndex].Cells["id"].Value).ToString();
             txtDescricaoImagem.Text = "";
+        }
+
+        private void btnComparar_Click(object sender, EventArgs e)
+        {
+            Fingerprint fpBase = new Fingerprint();
+            Person pessoaBase = new Person();
+
+            List<Person> candidatos = new List<Person>();
+            
+            string diretorio;
+
+            openFile.ShowDialog();
+            openFile.Filter = "Image Files(*.JPG;*.PNG)|*.JPG;*.PNG";
+            openFile.CheckFileExists = true;
+            openFile.CheckPathExists = true;
+            openFile.OpenFile();
+            diretorio = openFile.FileName;
+
+            fpBase.AsBitmap = new Bitmap(Bitmap.FromFile(diretorio));
+            pessoaBase.Fingerprints.Add(fpBase);
+            for (i = 0; i < 4; i++)
+            {
+                fpBd[i] = new Fingerprint();
+                fpBd[i].AsBitmap = new Bitmap(Bitmap.FromFile(diretorio));
+            }
+
+            for (i = 0; i < 4; i++)
+            {            
+                pessoaBd[i] = new Person();
+                pessoaBd[i].Fingerprints.Add(fpBd[i]);
+                candidatos.Add(pessoaBd[i]);
+                Afis.Extract(pessoaBd[i]);
+            }
+
+            var pessoasMatchs = Afis.Identify(pessoaBase, candidatos).ToList();
+            var textoMatchs = pessoasMatchs.Select(p => p.Id);
+            foreach (var texto in textoMatchs)
+            {
+                MessageBox.Show(texto.ToString());
+            }
         }
     }
 }

@@ -38,6 +38,7 @@
             this.txtDescricaoImagem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnComparar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBancoImagens)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +94,7 @@
             this.btnCarregarImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarregarImagem.Location = new System.Drawing.Point(12, 317);
             this.btnCarregarImagem.Name = "btnCarregarImagem";
-            this.btnCarregarImagem.Size = new System.Drawing.Size(271, 27);
+            this.btnCarregarImagem.Size = new System.Drawing.Size(137, 27);
             this.btnCarregarImagem.TabIndex = 5;
             this.btnCarregarImagem.Text = "Carregar Imagem";
             this.btnCarregarImagem.UseVisualStyleBackColor = true;
@@ -102,9 +103,9 @@
             // btnSalvarImagem
             // 
             this.btnSalvarImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvarImagem.Location = new System.Drawing.Point(289, 317);
+            this.btnSalvarImagem.Location = new System.Drawing.Point(298, 317);
             this.btnSalvarImagem.Name = "btnSalvarImagem";
-            this.btnSalvarImagem.Size = new System.Drawing.Size(276, 27);
+            this.btnSalvarImagem.Size = new System.Drawing.Size(267, 27);
             this.btnSalvarImagem.TabIndex = 6;
             this.btnSalvarImagem.Text = "Salvar Imagem no Banco";
             this.btnSalvarImagem.UseVisualStyleBackColor = true;
@@ -138,11 +139,23 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Código da imagem:";
             // 
+            // btnComparar
+            // 
+            this.btnComparar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComparar.Location = new System.Drawing.Point(155, 317);
+            this.btnComparar.Name = "btnComparar";
+            this.btnComparar.Size = new System.Drawing.Size(137, 27);
+            this.btnComparar.TabIndex = 10;
+            this.btnComparar.Text = "Comparar";
+            this.btnComparar.UseVisualStyleBackColor = true;
+            this.btnComparar.Click += new System.EventHandler(this.btnComparar_Click);
+            // 
             // TesteImagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 506);
+            this.Controls.Add(this.btnComparar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDescricaoImagem);
@@ -175,6 +188,7 @@
         private System.Windows.Forms.TextBox txtDescricaoImagem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnComparar;
     }
 }
 
