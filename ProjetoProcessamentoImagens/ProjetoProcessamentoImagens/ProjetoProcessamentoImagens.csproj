@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AquisicaoBiometria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AquisicaoBiometria.Designer.cs">
-      <DependentUpon>AquisicaoBiometria.cs</DependentUpon>
-    </Compile>
     <Compile Include="AssociaçãoAgotoxicoPropriedade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +87,12 @@
     </Compile>
     <Compile Include="CadastrarRelaçãoAgrotoxicoPropriedade.Designer.cs">
       <DependentUpon>CadastrarRelaçãoAgrotoxicoPropriedade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroBiometria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroBiometria.Designer.cs">
+      <DependentUpon>CadastroBiometria.cs</DependentUpon>
     </Compile>
     <Compile Include="CadastroProprietario.cs">
       <SubType>Form</SubType>
@@ -168,9 +168,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AquisicaoBiometria.resx">
-      <DependentUpon>AquisicaoBiometria.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AssociaçãoAgotoxicoPropriedade.resx">
       <DependentUpon>AssociaçãoAgotoxicoPropriedade.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarUsuarios.resx">
       <DependentUpon>CadastrarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroBiometria.resx">
+      <DependentUpon>CadastroBiometria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroProprietario.resx">
       <DependentUpon>CadastroProprietario.cs</DependentUpon>

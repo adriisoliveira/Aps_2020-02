@@ -15,8 +15,8 @@ C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoIm
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csproj.CoreCompileInputs.cache
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.exe
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.pdb
-C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.AquisicaoBiometria.resources
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.ConsultarUsuarios.resources
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.AssociaçãoAgotoxicoPropriedade.resources
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarRelaçãoAgrotoxicoPropriedade.resources
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.BuscarPropriedade.resources
+C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastroBiometria.resources

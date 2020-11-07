@@ -22,8 +22,8 @@ namespace ProjetoProcessamentoImagens
 
         private void btnCadastrarBiometria_Click(object sender, EventArgs e)
         {
-            AquisicaoBiometria aquisicaoBiometria = new AquisicaoBiometria();
-            aquisicaoBiometria.Show();
+            CadastroBiometria biometria = new CadastroBiometria();
+            biometria.Show();
             this.Hide();
         }
 
@@ -74,5 +74,6 @@ namespace ProjetoProcessamentoImagens
         {
             txtUsuario.Text = Global.UsuarioLogado;
         }
+        
     }
 }
