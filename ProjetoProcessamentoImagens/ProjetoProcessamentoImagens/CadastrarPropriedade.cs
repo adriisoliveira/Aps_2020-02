@@ -96,16 +96,6 @@ namespace ProjetoProcessamentoImagens
                 {
                     MessageBox.Show("CIDADE INEXISTENTE!");
                 }
-                /*reader.Close();
-                if (reader.Read())
-                {
-                    nomeCidade = reader["UF_Estado"].ToString();
-                    cbxEstado.Text = ufEstado;
-                }
-                else
-                {
-                    MessageBox.Show("ESTADO INEXISTENTE!");
-                }*/
                 reader.Close();
 
 

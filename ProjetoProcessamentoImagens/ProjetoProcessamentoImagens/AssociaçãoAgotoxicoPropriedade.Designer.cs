@@ -31,13 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.txtCnpj = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCarregar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCadastrarNova = new System.Windows.Forms.Button();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,14 +69,6 @@
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 12;
             this.label2.Text = "Usuário:";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 96);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(521, 120);
-            this.richTextBox1.TabIndex = 15;
-            this.richTextBox1.Text = "";
             // 
             // txtCnpj
             // 
@@ -137,24 +130,33 @@
             this.btnCadastrarNova.UseVisualStyleBackColor = true;
             this.btnCadastrarNova.Click += new System.EventHandler(this.btnCadastrarNova_Click);
             // 
+            // dgvResultados
+            // 
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Location = new System.Drawing.Point(16, 86);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.Size = new System.Drawing.Size(521, 133);
+            this.dgvResultados.TabIndex = 53;
+            // 
             // AssociaçãoAgotoxicoPropriedade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 279);
+            this.Controls.Add(this.dgvResultados);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCadastrarNova);
             this.Controls.Add(this.btnCarregar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCnpj);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Name = "AssociaçãoAgotoxicoPropriedade";
             this.Text = "Associação Agotoxico Propriedade";
             this.Load += new System.EventHandler(this.AssociaçãoAgotoxicoPropriedade_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,12 +167,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox txtCnpj;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCarregar;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCadastrarNova;
+        private System.Windows.Forms.DataGridView dgvResultados;
     }
 }

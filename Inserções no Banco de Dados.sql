@@ -126,6 +126,8 @@ INSERT INTO Propriedade VALUES
 ('45758524589668', 'Fazenda Habibs', 'Avenida Paulista, 1562','Palmas','1400 Hectares','Cana','47859632145'),
 ('45758524589669', 'Fazenda FSmith', 'Estrada Garoto, 55','Recife','3200 Hectares','Algodão','14589652148')*/;
 
+select * from Proprietario where CPF_Proprietario='47859632145'
+
 SELECT * FROM Propriedade
 
 SELECT * FROM Agrotoxico
@@ -155,3 +157,5 @@ DELETE FROM Usuario WHERE ID_Usuario = 13
 select * from Usuario
 
 SELECT Nome_Cidade,UF_Estado FROM Cidade WHERE Nome_Cidade='Vitória' and UF_Estado='ES'
+
+SELECT * FROM Agrotoxico_Propriedade where CNPJ_Propriedade='45758524589669'

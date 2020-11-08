@@ -47,11 +47,16 @@
             this.usuarioTableAdapter = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSetTableAdapters.UsuarioTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.usuarioTableAdapter1 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet5TableAdapters.UsuarioTableAdapter();
+            this.ministerio_MeioAmbienteDataSet12 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet12();
+            this.usuarioBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.usuarioTableAdapter2 = new ProjetoProcessamentoImagens.Ministerio_MeioAmbienteDataSet12TableAdapters.UsuarioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -97,7 +102,7 @@
             this.tipoAcessoDataGridViewTextBoxColumn,
             this.usuarioLoginDataGridViewTextBoxColumn,
             this.senhaDataGridViewTextBoxColumn});
-            this.dgvUsuarios.DataSource = this.usuarioBindingSource1;
+            this.dgvUsuarios.DataSource = this.usuarioBindingSource2;
             this.dgvUsuarios.Location = new System.Drawing.Point(16, 37);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.Size = new System.Drawing.Size(736, 220);
@@ -184,6 +189,20 @@
             // 
             this.usuarioTableAdapter1.ClearBeforeFill = true;
             // 
+            // ministerio_MeioAmbienteDataSet12
+            // 
+            this.ministerio_MeioAmbienteDataSet12.DataSetName = "Ministerio_MeioAmbienteDataSet12";
+            this.ministerio_MeioAmbienteDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usuarioBindingSource2
+            // 
+            this.usuarioBindingSource2.DataMember = "Usuario";
+            this.usuarioBindingSource2.DataSource = this.ministerio_MeioAmbienteDataSet12;
+            // 
+            // usuarioTableAdapter2
+            // 
+            this.usuarioTableAdapter2.ClearBeforeFill = true;
+            // 
             // ConsultarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,6 +221,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ministerio_MeioAmbienteDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +248,8 @@
         private Ministerio_MeioAmbienteDataSet5 ministerio_MeioAmbienteDataSet5;
         private System.Windows.Forms.BindingSource usuarioBindingSource1;
         private Ministerio_MeioAmbienteDataSet5TableAdapters.UsuarioTableAdapter usuarioTableAdapter1;
+        private Ministerio_MeioAmbienteDataSet12 ministerio_MeioAmbienteDataSet12;
+        private System.Windows.Forms.BindingSource usuarioBindingSource2;
+        private Ministerio_MeioAmbienteDataSet12TableAdapters.UsuarioTableAdapter usuarioTableAdapter2;
     }
 }

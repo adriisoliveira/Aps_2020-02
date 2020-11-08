@@ -41,7 +41,7 @@ namespace ProjetoProcessamentoImagens
                 SqlCommand cmd = new SqlCommand();
                 string cnpj = txtCnpj.Text;
                 cmd.Connection = conexao.Conectar();
-                cmd.CommandText = ("select * from Propriedade WHERE CNPJ_Propriedade =@cnpj");
+                cmd.CommandText = ("select * from Agrotoxico_Propriedade WHERE CNPJ_Propriedade =@cnpj");
                 //O campo SelectedValue se refere ao que eu selecionar na ComboBox
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@cnpj", cnpj);
@@ -56,7 +56,21 @@ namespace ProjetoProcessamentoImagens
                     MessageBox.Show("CNPJ INEXISTENTE!");
                 }
                 reader.Close();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
 
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dgvResultados.DataSource = dt;
+
+                dgvResultados.AllowUserToAddRows = false;
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Cadastro feito com sucesso!!");
+
+                conexao.desconectar();
+                
             }
             catch (Exception exe)
             {

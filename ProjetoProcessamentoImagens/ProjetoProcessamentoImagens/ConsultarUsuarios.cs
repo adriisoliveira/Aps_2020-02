@@ -19,8 +19,9 @@ namespace ProjetoProcessamentoImagens
 
         private void ConsultarUsuarios_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet5.Usuario'. Você pode movê-la ou removê-la conforme necessário.
-            this.usuarioTableAdapter1.Fill(this.ministerio_MeioAmbienteDataSet5.Usuario);
+            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet12.Usuario'. Você pode movê-la ou removê-la conforme necessário.
+            this.usuarioTableAdapter2.Fill(this.ministerio_MeioAmbienteDataSet12.Usuario);
+
             txtUsuario.Text = Global.UsuarioLogado;
         }
 
