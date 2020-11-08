@@ -5,7 +5,7 @@ use Ministerio_MeioAmbiente
 
 create table Usuario (
 	ID_Usuario int primary key IDENTITY(1,1) NOT NULL,
-	Biometria varchar (255),
+	Biometria image,
 	Nome varchar (255),
 	Telefone varchar (23),
 	Tipo_Acesso int,

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SourceAFIS, Version=1.7.0.41358, Culture=neutral, PublicKeyToken=b195ffd29617dfb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\SourceAFIS.1.7\lib\net451\SourceAFIS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -87,12 +90,6 @@
     </Compile>
     <Compile Include="CadastrarRelaçãoAgrotoxicoPropriedade.Designer.cs">
       <DependentUpon>CadastrarRelaçãoAgrotoxicoPropriedade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CadastroBiometria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CadastroBiometria.Designer.cs">
-      <DependentUpon>CadastroBiometria.cs</DependentUpon>
     </Compile>
     <Compile Include="CadastroProprietario.cs">
       <SubType>Form</SubType>
@@ -168,6 +165,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerificacaoBiometria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerificacaoBiometria.Designer.cs">
+      <DependentUpon>VerificacaoBiometria.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AssociaçãoAgotoxicoPropriedade.resx">
       <DependentUpon>AssociaçãoAgotoxicoPropriedade.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,9 +195,6 @@
     <EmbeddedResource Include="CadastrarUsuarios.resx">
       <DependentUpon>CadastrarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroBiometria.resx">
-      <DependentUpon>CadastroBiometria.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadastroProprietario.resx">
       <DependentUpon>CadastroProprietario.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +216,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VerificacaoBiometria.resx">
+      <DependentUpon>VerificacaoBiometria.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Ministerio_MeioAmbienteDataSet.xsc">
       <DependentUpon>Ministerio_MeioAmbienteDataSet.xsd</DependentUpon>
     </None>
@@ -304,6 +307,7 @@
     <None Include="Ministerio_MeioAmbienteDataSet7.xss">
       <DependentUpon>Ministerio_MeioAmbienteDataSet7.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

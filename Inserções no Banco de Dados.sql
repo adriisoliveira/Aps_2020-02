@@ -141,3 +141,8 @@ INSERT INTO Agrotoxico VALUES
 /*('Imidacloprido','Pode causar efeitos colaterais em humanos como: Letargia, Vômito, Diarréia, Perda de apetite, Tropeço','Inseticida','C9H10ClN5O2','grãos, frutas, legumes, hortaliças, pastagens, cana, eucalipto, fumo, cereais e flores')*/;
 
 
+ALTER TABLE Usuario ALTER COLUMN Biometria nvarchar;
+
+DELETE FROM Usuario WHERE ID_Usuario = 12
+
+select * from Usuario

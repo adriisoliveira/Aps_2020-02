@@ -9,19 +9,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SourceAFIS.Simple;
 
 
 namespace ProjetoProcessamentoImagens
 {
     public partial class VerificacaoBiometria : Form
     {
+        Person pessoaBase;
+        List<Person> pessoasBd;
         CadastrarUsuarios usuarios = new CadastrarUsuarios();
         private long tamanhoArquivoImagem = 0;
         private byte[] vetorImagens;
         OpenFileDialog openFile = new OpenFileDialog();
+        AfisEngine afis = new AfisEngine();
+
         public VerificacaoBiometria()
         {
             InitializeComponent();
+            pessoasBd = new List<Person>();
+            pessoaBase = new Person();
         }
 
         private void VerificacaoBiometria_Load(object sender, EventArgs e)
@@ -36,18 +43,20 @@ namespace ProjetoProcessamentoImagens
 
                 openFile.ShowDialog(this);
                 openFile.Filter = "Image Files(*.JPG;*.PNG)|*.JPG;*.PNG";
+
+                pbxBiometria.Image = Image.FromFile(openFile.FileName);
+
                 string strFn = openFile.FileName;
 
+                Fingerprint fp = new Fingerprint();
+                fp.AsBitmap = new Bitmap(Bitmap.FromFile(strFn));
+                pessoaBase.Id = 4;
+                pessoaBase.Fingerprints.Add(fp);
+                
+                
                 if (string.IsNullOrEmpty(strFn))
                     return;
-
-                pbxBiometria.Image = Image.FromFile(strFn);
-                FileInfo arqImagem = new FileInfo(strFn);
-                tamanhoArquivoImagem = arqImagem.Length;
-                FileStream fs = new FileStream(strFn, FileMode.Open, FileAccess.Read, FileShare.Read);
-                vetorImagens = new byte[Convert.ToInt32(this.tamanhoArquivoImagem)];
-                int iBytesRead = fs.Read(vetorImagens, 0, Convert.ToInt32(this.tamanhoArquivoImagem));
-                fs.Close();
+                
 
             }
             catch (Exception ex)
@@ -59,11 +68,65 @@ namespace ProjetoProcessamentoImagens
         private void btnAutenticar_Click(object sender, EventArgs e)
         {
 
+            List<Person> candidatos = new List<Person>();
+
+            string diretorio;
+
+
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                Conexao con = new Conexao();
+
+
+                cmd.Connection = con.Conectar();
+                cmd.CommandText = "SELECT * FROM Usuario";
+                SqlDataReader rd = cmd.ExecuteReader();
+                ImageConverter converter = new ImageConverter();
+
+                if (rd.HasRows)
+                    while (rd.Read())
+                    {
+                        if (Convert.ToInt32(rd["ID_Usuario"]) != 1){
+                            Bitmap bmp;
+                            var img = (byte[])rd["Biometria"];
+                            using (var ms = new MemoryStream(img))
+                                bmp = new Bitmap(ms);
+                            pessoasBd.Add(new Person
+                            {
+                                Id = Convert.ToInt32(rd["ID_Usuario"]),
+                                Fingerprints = new List<Fingerprint> { new Fingerprint { AsBitmap = bmp } }
+                            });
+                        }
+                    }
+                afis.Extract(pessoaBase);
+                foreach (var p in pessoasBd)
+                    afis.Extract(p);
+
+                var matches = afis.Identify(pessoaBase, pessoasBd);
+                if (matches.Any())
+                    MessageBox.Show("Encontrou");
+                else
+                    MessageBox.Show("Não Encontrou");
+
+                con.desconectar();
+
+                TelaInicio telaInicio = new TelaInicio();
+                telaInicio.Show();
+                this.Hide();
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show("Erro");
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Show();
+            this.Hide();
         }
     }
 }

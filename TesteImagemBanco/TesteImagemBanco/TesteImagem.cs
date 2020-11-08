@@ -19,13 +19,13 @@ namespace TesteImagemBanco
         private long tamanhoArquivoImagem = 0;
         private byte[] vetorImagens;
         private SqlConnection conexaoSQLServer;
-        SqlCommand sqlcmd = default(SqlCommand);
+        SqlCommand cmd = default(SqlCommand);
         static AfisEngine Afis = new AfisEngine();
         OpenFileDialog openFile = new OpenFileDialog();
         Fingerprint[] fpBd = new Fingerprint[i];
         Person[] pessoaBd = new Person[i];
 
-
+            
         private Conexao con;
 
 
@@ -142,40 +142,40 @@ namespace TesteImagemBanco
 
             
             
-            if (string.IsNullOrEmpty(txtDescricaoImagem.Text))
-            {
-                MessageBox.Show("Informe a descrição da imagem", "Código da Imagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            Conexao con = new Conexao();
-            SqlCommand cmd = new SqlCommand();
-            try
-            {
-                cmd.Connection = con.Conectar();
-                cmd.CommandText = "INSERT INTO IMAGEM (DESCRICAO,IMAGEM) values(@descricao,@imagem)";
-                cmd.Parameters.Add("@descricao", System.Data.SqlDbType.VarChar, 50);
-                cmd.Parameters.Add("@imagem", System.Data.SqlDbType.Image);
+                if (string.IsNullOrEmpty(txtDescricaoImagem.Text))
+                {
+                    MessageBox.Show("Informe a descrição da imagem", "Código da Imagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                Conexao con = new Conexao();
+                SqlCommand cmd = new SqlCommand();
+                try
+                {
+                    cmd.Connection = con.Conectar();
+                    cmd.CommandText = "INSERT INTO IMAGEM (DESCRICAO,IMAGEM) values(@descricao,@imagem)";
+                    cmd.Parameters.Add("@descricao", System.Data.SqlDbType.VarChar, 50);
+                    cmd.Parameters.Add("@imagem", System.Data.SqlDbType.Image);
 
   
-                cmd.Parameters["@descricao"].Value = txtDescricaoImagem.Text;
-                cmd.Parameters["@imagem"].Value = vetorImagens;
+                    cmd.Parameters["@descricao"].Value = txtDescricaoImagem.Text;
+                    cmd.Parameters["@imagem"].Value = vetorImagens;
 
-                int iresultado = cmd.ExecuteNonQuery();
+                    int iresultado = cmd.ExecuteNonQuery();
 
-                if (iresultado <= 0)
-                    MessageBox.Show("Falha ao incluir imagem no banco de dados.");
+                    if (iresultado <= 0)
+                        MessageBox.Show("Falha ao incluir imagem no banco de dados.");
 
-                getImagensSQLServer(con.retornaConexao());
+                    getImagensSQLServer(con.retornaConexao());
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                con.desconectar();  
-            }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con.desconectar();  
+                }
         }
 
         private void dgvBancoImagens_CellContentClick(object sender, DataGridViewCellEventArgs e)

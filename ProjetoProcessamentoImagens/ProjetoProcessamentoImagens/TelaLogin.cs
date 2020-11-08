@@ -56,9 +56,12 @@ namespace ProjetoProcessamentoImagens
 
                     Global.UsuarioLogado = txtUsuario.Text;
 
-                    TelaInicio telaInicio = new TelaInicio();
-                    telaInicio.Show();
+                    VerificacaoBiometria verificacaoBiometria = new VerificacaoBiometria();
+                    verificacaoBiometria.Show();
                     this.Hide();
+                    /*TelaInicio telaInicio = new TelaInicio();
+                    telaInicio.Show();
+                    this.Hide();*/
                 }
 
                 else
@@ -77,7 +80,7 @@ namespace ProjetoProcessamentoImagens
                 MessageBox.Show("ERRO AO SE CONECTAR COM O BANCO!");
             }
 
-
+            
 
 
             
