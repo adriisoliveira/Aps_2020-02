@@ -63,5 +63,10 @@ namespace ProjetoProcessamentoImagens
                 MessageBox.Show("ERRO AO CARREGAR DADOS!\n" + exe.Message);
             }
         }
+
+        private void AssociaçãoAgotoxicoPropriedade_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Global.UsuarioLogado;
+        }
     }
 }

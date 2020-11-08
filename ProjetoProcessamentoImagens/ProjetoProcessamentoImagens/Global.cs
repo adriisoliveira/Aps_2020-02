@@ -9,5 +9,7 @@ namespace ProjetoProcessamentoImagens
     public static class Global
     {
         public static string UsuarioLogado { get; set; }
+
+        public static int Tipo_Acesso { get; set; }
     }
 }

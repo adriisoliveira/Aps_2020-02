@@ -33,8 +33,9 @@ namespace ProjetoProcessamentoImagens
             Conexao conexao = new Conexao();
             string usuario = txtUsuario.Text;
             string senha = txtSenha.Text;
+            
             SqlCommand cmd = new SqlCommand();
-            string query = "SELECT UsuarioLogin, Senha FROM Usuario WHERE UsuarioLogin=@usuario and Senha=@senha";
+            string query = "SELECT ID_Usuario,Tipo_Acesso,UsuarioLogin, Senha FROM Usuario WHERE UsuarioLogin=@usuario and Senha=@senha";
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = query;
             cmd.Parameters.AddWithValue("@usuario", usuario);
@@ -55,13 +56,11 @@ namespace ProjetoProcessamentoImagens
                     senha = reader["Senha"].ToString();
 
                     Global.UsuarioLogado = txtUsuario.Text;
+                    Global.Tipo_Acesso = Convert.ToInt32(reader["Tipo_Acesso"]);
 
-                    VerificacaoBiometria verificacaoBiometria = new VerificacaoBiometria();
+                    VerificacaoBiometria verificacaoBiometria = new VerificacaoBiometria(Convert.ToInt32(reader["ID_Usuario"]));
                     verificacaoBiometria.Show();
                     this.Hide();
-                    /*TelaInicio telaInicio = new TelaInicio();
-                    telaInicio.Show();
-                    this.Hide();*/
                 }
 
                 else

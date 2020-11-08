@@ -20,7 +20,11 @@ namespace ProjetoProcessamentoImagens
         private void TelaInicio_Load(object sender, EventArgs e)
         {
             txtUsuario.Text = Global.UsuarioLogado;
-               
+            if(Global.Tipo_Acesso == 1)
+            {
+                btnCadastrarAgrotoxico.Enabled = false;
+                btnCadastrarPropriedade.Enabled = false;
+            }
         }
 
         private void btnBuscarPropriedade_Click(object sender, EventArgs e)

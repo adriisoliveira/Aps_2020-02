@@ -24,11 +24,12 @@ namespace ProjetoProcessamentoImagens
         OpenFileDialog openFile = new OpenFileDialog();
         AfisEngine afis = new AfisEngine();
 
-        public VerificacaoBiometria()
+        public VerificacaoBiometria(int id)
         {
             InitializeComponent();
             pessoasBd = new List<Person>();
             pessoaBase = new Person();
+            pessoaBase.Id = id;
         }
 
         private void VerificacaoBiometria_Load(object sender, EventArgs e)
@@ -50,7 +51,6 @@ namespace ProjetoProcessamentoImagens
 
                 Fingerprint fp = new Fingerprint();
                 fp.AsBitmap = new Bitmap(Bitmap.FromFile(strFn));
-                pessoaBase.Id = 4;
                 pessoaBase.Fingerprints.Add(fp);
                 
                 
@@ -71,8 +71,6 @@ namespace ProjetoProcessamentoImagens
             List<Person> candidatos = new List<Person>();
 
             string diretorio;
-
-
 
             try
             {
@@ -105,16 +103,18 @@ namespace ProjetoProcessamentoImagens
                     afis.Extract(p);
 
                 var matches = afis.Identify(pessoaBase, pessoasBd);
-                if (matches.Any())
-                    MessageBox.Show("Encontrou");
+                if (matches.Any(x => x.Id == pessoaBase.Id))
+                {
+                    TelaInicio telaInicio = new TelaInicio();
+                    telaInicio.Show();
+                    this.Hide();
+                }
                 else
-                    MessageBox.Show("Não Encontrou");
+                    MessageBox.Show("Acesso não autorizado, tente novamente!");
 
                 con.desconectar();
 
-                TelaInicio telaInicio = new TelaInicio();
-                telaInicio.Show();
-                this.Hide();
+                
             }
             catch(SqlException ex)
             {

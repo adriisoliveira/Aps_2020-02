@@ -154,6 +154,7 @@
             this.Controls.Add(this.label2);
             this.Name = "AssociaçãoAgotoxicoPropriedade";
             this.Text = "Associação Agotoxico Propriedade";
+            this.Load += new System.EventHandler(this.AssociaçãoAgotoxicoPropriedade_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

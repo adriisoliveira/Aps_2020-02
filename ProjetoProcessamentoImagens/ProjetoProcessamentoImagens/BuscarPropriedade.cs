@@ -91,6 +91,11 @@ namespace ProjetoProcessamentoImagens
         private void rtbResultados_Load(object sender, EventArgs e)
         {
             txtUsuario.Text = Global.UsuarioLogado;
+            if (Global.Tipo_Acesso == 1 || Global.Tipo_Acesso == 2)
+            {
+                btnConsultar.Enabled = false;
+
+            }
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
