@@ -51,7 +51,7 @@ namespace ProjetoProcessamentoImagens
                 cmd.Connection = conexao.Conectar();
                 //Comandos SQL para inserir os dados no banco
                 //Para escrever os comandos precisa da classe SqlCommand
-                cmd.CommandText = "INSERT INTO Agrotoxico (Nome_Agrotoxico,Descricao,Classificacao,Composicao,Permissao) values ('" +txtNome.Text+ "', '" + txtDescricao.Text + "','" + lbxClassificacao.Text + "',+'" + txtComposicao.Text + "','" + txtPermissao.Text + "')";
+                cmd.CommandText = "INSERT INTO Agrotoxico (Nome_Agrotoxico,Descricao,Classificacao,Composicao,Permissao) values ('" +txtNome.Text+ "', '" + txtDescricao.Text + "','" + cbxClassificacao.Text + "','" + txtComposicao.Text + "','" + txtPermissao.Text + "')";
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
 

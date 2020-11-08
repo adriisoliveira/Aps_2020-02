@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,10 +23,12 @@ namespace ProjetoProcessamentoImagens
 
         private void CadastrarPropriedade_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet7.Estado'. Você pode movê-la ou removê-la conforme necessário.
-            this.estadoTableAdapter1.Fill(this.ministerio_MeioAmbienteDataSet7.Estado);
-            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet6.Cidade'. Você pode movê-la ou removê-la conforme necessário.
-            this.cidadeTableAdapter1.Fill(this.ministerio_MeioAmbienteDataSet6.Cidade);
+            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet11.Estado'. Você pode movê-la ou removê-la conforme necessário.
+            this.estadoTableAdapter3.Fill(this.ministerio_MeioAmbienteDataSet11.Estado);
+            // TODO: esta linha de código carrega dados na tabela 'ministerio_MeioAmbienteDataSet10.Cidade'. Você pode movê-la ou removê-la conforme necessário.
+            this.cidadeTableAdapter3.Fill(this.ministerio_MeioAmbienteDataSet10.Cidade);
+
+
 
             txtNome.Focus();
             txtUsuario.Text = Global.UsuarioLogado;
@@ -56,7 +57,8 @@ namespace ProjetoProcessamentoImagens
             txtProprietario.Clear();
             txtTamanho.Clear();
             txtTipoProducao.Clear();
-            lbxCidade.ClearSelected();
+            cbxCidade.SelectedIndex = -1;
+            cbxEstado.SelectedIndex = -1;
         }
 
         private void lbxEstado_SelectedIndexChanged(object sender, EventArgs e)
@@ -77,38 +79,41 @@ namespace ProjetoProcessamentoImagens
                 //MessageBox.Show(cbxCarregar.SelectedValue.ToString());
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conexao.Conectar();
-                string nomeCidade = lbxCidade.Text;
-                string ufEstado = lblEstado.Text;
-                cmd.CommandText = ("SELECT Nome_Cidade,UF_Estado FROM Cidade WHERE Nome_Cidade=@nomeCidade, UF_Estado=@ufEstado");
+                string nomeCidade = cbxCidade.Text;
+                string ufEstado = cbxEstado.Text;
+                cmd.CommandText = ("SELECT Nome_Cidade,UF_Estado FROM Cidade WHERE Nome_Cidade=@nomeCidade and UF_Estado=@ufEstado");
                 cmd.Parameters.AddWithValue("@nomeCidade", nomeCidade);
                 cmd.Parameters.AddWithValue("@ufEstado", ufEstado);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     nomeCidade = reader["Nome_Cidade"].ToString();
-                    lbxCidade.Text = nomeCidade;
+                    cbxCidade.Text = nomeCidade;
+                    ufEstado = reader["UF_Estado"].ToString();
+                    cbxEstado.Text = ufEstado;
                 }
                 else
                 {
                     MessageBox.Show("CIDADE INEXISTENTE!");
                 }
-                reader.Close();
+                /*reader.Close();
                 if (reader.Read())
                 {
                     nomeCidade = reader["UF_Estado"].ToString();
-                    lblEstado.Text = ufEstado;
+                    cbxEstado.Text = ufEstado;
                 }
                 else
                 {
                     MessageBox.Show("ESTADO INEXISTENTE!");
-                }
+                }*/
                 reader.Close();
 
 
-                cmd.CommandText = ("INSERT INTO Propriedade (CNPJ_Propriedade,Nome,Endereco,ID_Cidade,Tamanho,Producao,ID_Proprietario) VALUES ('" +txtCnpj.Text + "', '" + txtNome.Text + "', '" + txtEndereco.Text + "', +'" + lbxCidade.Text + "', '" + txtTamanho.Text + "', '" + txtTipoProducao.Text + "','"+txtProprietario.Text+"'");
+                cmd.CommandText = ("INSERT INTO Propriedade (CNPJ_Propriedade,Nome,Endereco,Nome_Cidade,Tamanho,Producao,CPF_Proprietario) VALUES ('" +txtCnpj.Text + "', '" + txtNome.Text + "', '" + txtEndereco.Text + "', +'" + cbxCidade.Text + "', '" + txtTamanho.Text + "', '" + txtTipoProducao.Text + "','"+txtProprietario.Text+"')");
                 cmd.ExecuteNonQuery();
                 conexao.desconectar();
 
+                MessageBox.Show("CADASTRO FEITO COM SUCESSO");
             }
             catch (Exception exe)
             {

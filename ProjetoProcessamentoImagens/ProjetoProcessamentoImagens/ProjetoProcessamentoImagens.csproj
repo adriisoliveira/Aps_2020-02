@@ -121,6 +121,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ministerio_MeioAmbienteDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Ministerio_MeioAmbienteDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ministerio_MeioAmbienteDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ministerio_MeioAmbienteDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ministerio_MeioAmbienteDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Ministerio_MeioAmbienteDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -150,6 +160,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Ministerio_MeioAmbienteDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ministerio_MeioAmbienteDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ministerio_MeioAmbienteDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ministerio_MeioAmbienteDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ministerio_MeioAmbienteDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="TelaInicio.cs">
       <SubType>Form</SubType>
@@ -241,6 +261,28 @@
     <None Include="Ministerio_MeioAmbienteDataSet1.xss">
       <DependentUpon>Ministerio_MeioAmbienteDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="Ministerio_MeioAmbienteDataSet10.xsc">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ministerio_MeioAmbienteDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet10.xss">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet11.xsc">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ministerio_MeioAmbienteDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet11.xss">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet11.xsd</DependentUpon>
+    </None>
     <None Include="Ministerio_MeioAmbienteDataSet2.xsc">
       <DependentUpon>Ministerio_MeioAmbienteDataSet2.xsd</DependentUpon>
     </None>
@@ -306,6 +348,28 @@
     </None>
     <None Include="Ministerio_MeioAmbienteDataSet7.xss">
       <DependentUpon>Ministerio_MeioAmbienteDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet8.xsc">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ministerio_MeioAmbienteDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet8.xss">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet9.xsc">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ministerio_MeioAmbienteDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ministerio_MeioAmbienteDataSet9.xss">
+      <DependentUpon>Ministerio_MeioAmbienteDataSet9.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

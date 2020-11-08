@@ -122,10 +122,13 @@ INSERT INTO Propriedade VALUES
 ('45758524589664', 'Fazenda Chitãozinho', 'Avenida casa blanca, 1962','São Luís','203 Hectares','Flores','98732145698'),
 ('45758524589665', 'Fazenda dos Ônibus', 'Avenida casa blanca, 1992','São Luís','932 Hectares','Melancia','47859632145'),
 ('45758524589660', 'Fazenda Lojas Renner', 'Travessa Paulino Arnaldo Adolfo, 50','Aracaju','500 Hectares','Batata','47896541236')
-/*('45758524589667', 'Fazenda Mãoleve', 'Avenida do Estado, 1902','Vitória','14000 Hectares','Eucalipto','461379974'),
-('45758524589668', 'Fazenda Habibs', 'Avenida Paulista, 1562','Palmas','1400 Hectares','Cana','417452856'),
-('45758524589669', 'Fazenda FSmith', 'Estrada Garoto, 55','Recife','3200 Hectares','Algodão','164379465')*/;
+/*('45758524589667', 'Fazenda Mãoleve', 'Avenida do Estado, 1902','Vitória','14000 Hectares','Eucalipto','11155599987'),
+('45758524589668', 'Fazenda Habibs', 'Avenida Paulista, 1562','Palmas','1400 Hectares','Cana','47859632145'),
+('45758524589669', 'Fazenda FSmith', 'Estrada Garoto, 55','Recife','3200 Hectares','Algodão','14589652148')*/;
 
+SELECT * FROM Propriedade
+
+SELECT * FROM Agrotoxico
 
 INSERT INTO Agrotoxico VALUES
 ('Glifosfato','Pode causar efeitos colaterais em humanos como:desordens gastrointestinais, obesidade, diabetes, doenças cardíacas, depressão, autismo, infertilidade, câncer, mal de Alzheimer, mal de Parkinson, microcefalia, intolerância ao glúten e alterações hormonais','Herbicida','C3H8NO5P','grãos, algodão, cana, cereais, frutas, pastagens, fumo, eucalipto e seringueiras'),
@@ -138,11 +141,17 @@ INSERT INTO Agrotoxico VALUES
 ('Protioconazol','Não identificado o efeito em humanos','Fungicida','C14H15Cl2N3OS','algodão, cereais, flores e grãos'),
 ('Fluxapiroxade','Pode causar efeitos colaterais em humanos como: Redução da atividade das enzimas antioxidantes das plantas','Fungicida','C18H12F5N3O','algodão, grãos, cereais, flores, cana e legume'),
 ('Acefato','Pode causar efeitos colaterais em humanos como:neuropatias, alteração da quantidade de sêmen e o DNA na formação dos espermatozoides','Inseticida','C4H10NO3PS','algodão, grãos e frutasgrãos, frutas, legumes, hortaliças, pastagens, cana, eucalipto, fumo, cereais e flores')
-/*('Imidacloprido','Pode causar efeitos colaterais em humanos como: Letargia, Vômito, Diarréia, Perda de apetite, Tropeço','Inseticida','C9H10ClN5O2','grãos, frutas, legumes, hortaliças, pastagens, cana, eucalipto, fumo, cereais e flores')*/;
+/*('Imidacloprido','Pode causar efeitos colaterais em humanos como: Letargia, Vômito, Diarréia, Perda de apetite, Tropeço','Inseticida','C9H10ClN5O2','grãos, frutas, legumes, hortaliças, pastagens, cana, eucalipto, fumo, cereais e flores') - */;
+
+SELECT * FROM Agrotoxico
+
+DELETE FROM Agrotoxico WHERE Nome_Agrotoxico = 'Piraclostrobina'
 
 
 ALTER TABLE Usuario ALTER COLUMN Biometria nvarchar;
 
-DELETE FROM Usuario WHERE ID_Usuario = 12
+DELETE FROM Usuario WHERE ID_Usuario = 13
 
 select * from Usuario
+
+SELECT Nome_Cidade,UF_Estado FROM Cidade WHERE Nome_Cidade='Vitória' and UF_Estado='ES'

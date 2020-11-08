@@ -73,6 +73,7 @@
             this.pbxBiometria.Location = new System.Drawing.Point(12, 53);
             this.pbxBiometria.Name = "pbxBiometria";
             this.pbxBiometria.Size = new System.Drawing.Size(293, 223);
+            this.pbxBiometria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxBiometria.TabIndex = 28;
             this.pbxBiometria.TabStop = false;
             // 

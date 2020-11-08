@@ -45,7 +45,7 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.lbxClassificacao = new System.Windows.Forms.ListBox();
+            this.cbxClassificacao = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -209,25 +209,25 @@
             this.label8.TabIndex = 50;
             this.label8.Text = "Classificação:";
             // 
-            // lbxClassificacao
+            // cbxClassificacao
             // 
-            this.lbxClassificacao.FormattingEnabled = true;
-            this.lbxClassificacao.Items.AddRange(new object[] {
-            "Selecione",
+            this.cbxClassificacao.FormattingEnabled = true;
+            this.cbxClassificacao.Items.AddRange(new object[] {
+            "",
             "Herbicida",
             "Fungicida",
             "Inseticida"});
-            this.lbxClassificacao.Location = new System.Drawing.Point(408, 70);
-            this.lbxClassificacao.Name = "lbxClassificacao";
-            this.lbxClassificacao.Size = new System.Drawing.Size(129, 17);
-            this.lbxClassificacao.TabIndex = 51;
+            this.cbxClassificacao.Location = new System.Drawing.Point(408, 66);
+            this.cbxClassificacao.Name = "cbxClassificacao";
+            this.cbxClassificacao.Size = new System.Drawing.Size(121, 21);
+            this.cbxClassificacao.TabIndex = 51;
             // 
             // CadastrarAgrotoxico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 467);
-            this.Controls.Add(this.lbxClassificacao);
+            this.Controls.Add(this.cbxClassificacao);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
@@ -272,6 +272,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ListBox lbxClassificacao;
+        private System.Windows.Forms.ComboBox cbxClassificacao;
     }
 }
