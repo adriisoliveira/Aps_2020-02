@@ -44,5 +44,16 @@ namespace ProjetoProcessamentoImagens.Properties {
                 return ((string)(this["Ministerio_MeioAmbienteConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9AR7799;Initial Catalog=Ministerio_MeioAmbiente;Integrated Se" +
+            "curity=True")]
+        public string Ministerio_MeioAmbienteConnectionString2 {
+            get {
+                return ((string)(this["Ministerio_MeioAmbienteConnectionString2"]));
+            }
+        }
     }
 }

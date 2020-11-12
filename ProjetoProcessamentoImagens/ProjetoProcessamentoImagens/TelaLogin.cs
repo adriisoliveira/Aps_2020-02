@@ -61,6 +61,9 @@ namespace ProjetoProcessamentoImagens
                     VerificacaoBiometria verificacaoBiometria = new VerificacaoBiometria(Convert.ToInt32(reader["ID_Usuario"]));
                     verificacaoBiometria.Show();
                     this.Hide();
+                    //TelaInicio telainicio = new TelaInicio();
+                    //telainicio.Show();
+                    //this.Hide();
                 }
 
                 else

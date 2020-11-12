@@ -23,3 +23,28 @@ C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoIm
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\SourceAFIS.dll
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\SourceAFIS.xml
 C:\Users\Drih\Documents\Faculdade 2020-02\APS\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csproj.CopyComplete
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\ProjetoProcessamentoImagens.exe.config
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\ProjetoProcessamentoImagens.exe
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\ProjetoProcessamentoImagens.pdb
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\SourceAFIS.dll
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\bin\Debug\SourceAFIS.xml
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csprojAssemblyReference.cache
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.AssociaçãoAgotoxicoPropriedade.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.BuscarAgrotoxicos.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.BuscarPropriedade.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.BuscarProprietario.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarAgrotoxico.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarPropriedade.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarRelaçãoAgrotoxicoPropriedade.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastrarUsuarios.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.CadastroProprietario.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.ConsultarUsuarios.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.TelaInicio.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.TelaLogin.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.Properties.Resources.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.VerificacaoBiometria.resources
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csproj.GenerateResource.cache
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csproj.CoreCompileInputs.cache
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.csproj.CopyComplete
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.exe
+C:\Users\alanq\Documents\APS_GIT\Aps_2020-02\ProjetoProcessamentoImagens\ProjetoProcessamentoImagens\obj\Debug\ProjetoProcessamentoImagens.pdb

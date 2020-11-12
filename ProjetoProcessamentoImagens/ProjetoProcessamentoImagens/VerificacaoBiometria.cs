@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SourceAFIS.Simple;
+using SourceAFIS.Extraction.Filters;
 
 
 namespace ProjetoProcessamentoImagens
@@ -56,7 +57,9 @@ namespace ProjetoProcessamentoImagens
                 
                 if (string.IsNullOrEmpty(strFn))
                     return;
-                
+
+                OrientedSmoother.Equals(fp, fp);
+                SegmentationMask.Equals(fp, fp);
 
             }
             catch (Exception ex)
